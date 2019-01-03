@@ -36,3 +36,6 @@ sysinfo.txt
 *.unitypackage
 Obiektyw60plus/.vs/Obiektyw60plus/v15/Server/sqlite3/db.lock
 Obiektyw60plus/.vs/Obiektyw60plus/v15/Server/sqlite3/storage.ide-wal
+*.csproj
+*.mdb
+*.log
