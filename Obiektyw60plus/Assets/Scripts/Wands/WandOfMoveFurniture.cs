@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using OculusSampleFramework;
 
-public class WandOfMoveFurniture : MonoBehaviour {
+public class WandOfMoveFurniture : MonoBehaviour
+{
 
     public bool move = false;
     public Vector3 PointToGo;
@@ -15,10 +16,12 @@ public class WandOfMoveFurniture : MonoBehaviour {
     MoveShelves moveShelves;
     MoveDoor moveDoor;
     CurtainController curtainController;
+    CastSpells castSpells;
 
     GameObject KitchenShelf;
     GameObject GameManager;
     GameObject Door;
+    GameObject wandOfMoveFurnitures;
 
     bool UsingItem = false;
     bool SomethingIsUsed = false;
@@ -29,6 +32,8 @@ public class WandOfMoveFurniture : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        wandOfMoveFurnitures = GameObject.Find("WandOfMoveFurniture");
+
         KitchenShelf = GameObject.Find("salonRegal");
         if (!KitchenShelf) Debug.Log("Can't find salonRegal");
 
@@ -62,14 +67,14 @@ public class WandOfMoveFurniture : MonoBehaviour {
         //Debug.Log("Primary thumbstick " + Input.GetAxis("Oculus_CrossPlatform_PrimaryThumbstick"));
         //Debug.Log("Secondary thumbstick " + Input.GetAxis("Oculus_CrossPlatform_SecondaryThumbstick"));
 
-        
+
         SomethingIsUsed = curtainController.Use || moveShelves.IsShelfSelected || move;
 
         if (IsSelectedShelf() && MovementInput > 0 && !SomethingIsUsed) moveShelves.IsShelfSelected = true; //moving shelves
         if (IsSelectedDoor() && MovementInput > 0 && !SomethingIsUsed) moveDoor.Move = true; //moving door
         if (IsSelectedCurtain() && MovementInput > 0 && !SomethingIsUsed) curtainController.Use = true; //using curtains
 
-        if (/*/*IsSelectedMovableObject() &&*/ MovementInput > 0 ) { move = true; }
+        if (/*/*IsSelectedMovableObject() &&*/ MovementInput > 0) { move = true; }
         else { move = false; }
 
         FindIntersectionPoint();
@@ -80,8 +85,12 @@ public class WandOfMoveFurniture : MonoBehaviour {
             if (!UsingItem)
             {
                 castingToObject.IsCasting = true; //activating script for detecting which object we hit
-                drawLaser.IsShowingLaser = true; 
+                drawLaser.IsShowingLaser = true;
                 UsingItem = true;
+
+                CastSpells castSpells = (CastSpells)wandOfMoveFurnitures.GetComponent(typeof(CastSpells));  //activating the spells
+                castSpells.StartUsingSpells();
+
             }
         }
         if (UsingItem && !distanceGrabbable.isGrabbed)
@@ -90,6 +99,9 @@ public class WandOfMoveFurniture : MonoBehaviour {
             UsingItem = false;
             castingToObject.IsCasting = false;
             drawLaser.IsShowingLaser = false;
+
+            CastSpells castSpells = (CastSpells)wandOfMoveFurnitures.GetComponent(typeof(CastSpells));
+            castSpells.StopUsingSpells();
         }
     }
 
