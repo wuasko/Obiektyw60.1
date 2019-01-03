@@ -369,6 +369,7 @@
      <Compile Include="Assets\Scripts\UI\ButtonSound.cs" />
      <Compile Include="Assets\Scripts\UI\MainMenu.cs" />
      <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
+     <Compile Include="Assets\Scripts\Wands\ArchitectModeWands.cs" />
      <Compile Include="Assets\Scripts\Wands\CastingToObject.cs" />
      <Compile Include="Assets\Scripts\Wands\CheckHandCollision.cs" />
      <Compile Include="Assets\Scripts\Wands\DrawLaser.cs" />
