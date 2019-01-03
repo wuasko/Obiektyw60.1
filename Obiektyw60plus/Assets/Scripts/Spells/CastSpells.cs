@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using OculusSampleFramework;
 
-public class CastSpells : MonoBehaviour {
+public class CastSpells : MonoBehaviour
+{
 
     private enum TypeOfSpell
     {
@@ -12,31 +14,39 @@ public class CastSpells : MonoBehaviour {
         CookingSpell
     }
 
+    private bool startUsingSpells;
+
     Spell spell;
-
     private int spellNumber;
-
     public List<Spell> spellsList = new List<Spell>();
-                                      
-	void Start () {
+    private float oculusTriggerInput;
+    DistanceGrabbable distanceGrabbable;
+
+    void Start()
+    {
+        startUsingSpells = false;
+
+        distanceGrabbable = GetComponent<DistanceGrabbable>();
+        if (!distanceGrabbable) Debug.Log("Script DistanceGrabbable not attached");
+
         spellNumber = 0;
-
         spell = (Spell)Resources.Load("Spells/" + gameObject.name, typeof(Spell));
-
         List<Spell> spellDatabase = GameObject.Find("SpellManager").GetComponent<SpellManager>().spellList;
-        
-        foreach(Spell spell_ in spellDatabase)
+
+        foreach (Spell spell_ in spellDatabase)
         {
             spellsList.Add(spell_);
         }
-	}
+    }
 
     void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.U) && this.gameObject.name == "WandOfMoveFurniture")
+        oculusTriggerInput = Input.GetAxis("Oculus_CrossPlatform_SecondaryIndexTrigger");
+
+        if (Input.GetKeyDown(KeyCode.U) && startUsingSpells && this.gameObject.name == "WandOfMoveFurniture")
         {
             Spell moveSpell;
-            foreach(Spell s in spellsList)
+            foreach (Spell s in spellsList)
             {
                 if (s.spellName == "MoveSpell")
                 {
@@ -122,6 +132,14 @@ public class CastSpells : MonoBehaviour {
             Destroy(spellObject, 2);
         }
     }
-	
-	
+
+    public void StartUsingSpells()
+    {
+        startUsingSpells = true;
+    }
+
+    public void StopUsingSpells()
+    {
+        startUsingSpells = false;
+    }
 }
