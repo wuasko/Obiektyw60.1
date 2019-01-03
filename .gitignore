@@ -39,3 +39,7 @@ Obiektyw60plus/.vs/Obiektyw60plus/v15/Server/sqlite3/storage.ide-wal
 *.csproj
 *.mdb
 *.log
+*.log
+*.cache
+*.ide-wal
+*.ide-shm
