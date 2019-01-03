@@ -8,7 +8,8 @@ using Assets.Scripts.EyeEffectsPostprocessing;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
-public class ArchitectMenu : MonoBehaviour {
+public class ArchitectMenu : MonoBehaviour
+{
 
     public Toggle wheelchairToggle;
     public GameObject wheelchairMesh;
@@ -35,7 +36,8 @@ public class ArchitectMenu : MonoBehaviour {
 
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         glaucomaScript = eyesCamera.GetComponent<GlaucomaEffecet>();
         depthScript = eyesCamera.GetComponent<DepthOfField>();
         yellowScript = eyesCamera.GetComponent<YellowEyeEffect>();
@@ -50,7 +52,7 @@ public class ArchitectMenu : MonoBehaviour {
             yellowToggleChanged(toggleYellowing);
         });
         toggleDepth.onValueChanged.AddListener(delegate {
-           depthToggleChanged(toggleDepth);
+            depthToggleChanged(toggleDepth);
         });
         toggleCataract.onValueChanged.AddListener(delegate {
             cataractToggleChanged(toggleCataract);
@@ -60,6 +62,8 @@ public class ArchitectMenu : MonoBehaviour {
         });
 
         volumeSlider.value = PlayerPrefs.GetFloat("MusicVolume", 0.75f);
+
+        cataractScript.enabled = true;
 
     }
 
@@ -71,7 +75,8 @@ public class ArchitectMenu : MonoBehaviour {
 
     private void cataractToggleChanged(Toggle toggleCataract)
     {
-        cataractScript.enabled = toggleCataract.isOn;
+        //cataractScript.enabled = toggleCataract.isOn;
+        cataractScript.ChangeEnableOfCataract(toggleCataract.isOn);
     }
 
     private void glaucomaToggleChanged(Toggle toggleGlaucoma)
@@ -103,16 +108,17 @@ public class ArchitectMenu : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
-		
-	}
+    void Update()
+    {
+
+    }
 
     public void openSettings()
     {
         optionsPanel.SetActive(true);
         confirmPanel.SetActive(false);
     }
-    
+
     public void openConfirm()
     {
         optionsPanel.SetActive(false);
