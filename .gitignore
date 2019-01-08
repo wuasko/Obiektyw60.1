@@ -43,3 +43,6 @@ Obiektyw60plus/Assembly-CSharp-Editor.csproj
 Obiektyw60plus/Library/shadercompiler-UnityShaderCompiler.exe0.log
 Obiektyw60plus/Library/assetDatabase3
 Obiektyw60plus/Assets/Scenes/ModeStory.unity
+*.csproj
+*.log
+*.sln
