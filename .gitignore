@@ -50,3 +50,5 @@ Obiektyw60.1/Obiektyw60plus/Library/assetDatabase3
 Obiektyw60plus/Library/assetDatabase3
 *.csproj
 Obiektyw60plus/Library/shadercompiler-UnityShaderCompiler.exe0.log
+*.csproj
+*.log
