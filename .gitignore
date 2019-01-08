@@ -46,3 +46,7 @@ Obiektyw60plus/.vs/Obiektyw60plus/v15/Server/sqlite3/storage.ide-wal
 *.ide-shm
 *.sln
 Obiektyw60.1/Obiektyw60plus/Library/assetDatabase3
+*.mdb
+Obiektyw60plus/Library/assetDatabase3
+*.csproj
+Obiektyw60plus/Library/shadercompiler-UnityShaderCompiler.exe0.log
