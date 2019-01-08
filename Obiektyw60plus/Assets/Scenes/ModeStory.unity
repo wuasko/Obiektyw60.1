@@ -5370,6 +5370,125 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300062, guid: 18a794da35528374f9143bce4f5d7a09, type: 3}
+--- !u!1 &230842320 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1650480631844712, guid: 029cd57c6acdbd947b2160e5636ae773,
+    type: 2}
+  m_PrefabInternal: {fileID: 490060020}
+--- !u!114 &230842321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 230842320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a48c351cda6f8b40859ea5352c11506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cataractShader: {fileID: 4800000, guid: e54b005df46cf3e4ca1bd3c750f1fd39, type: 3}
+  hueShift: 1
+  saturation: 0.6
+  brightness: 1
+--- !u!114 &230842322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 230842320}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16638853aa1f6784780c5b6cf9f27992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visualizeFocus: 0
+  focalLength: 4.2
+  focalSize: 0.005
+  aperture: 0.5
+  focalTransform: {fileID: 0}
+  maxBlurSize: 2
+  highResolution: 0
+  blurType: 0
+  blurSampleCount: 2
+  nearBlur: 0
+  foregroundOverlap: 1
+  dofHdrShader: {fileID: 4800000, guid: 7a35a2dbe13f7ea4c942303d65fbd25d, type: 3}
+  dx11BokehShader: {fileID: 4800000, guid: 6651abed9ed08a7419ce173f64987ff9, type: 3}
+  dx11BokehThreshold: 0.5
+  dx11SpawnHeuristic: 0.0875
+  dx11BokehTexture: {fileID: 2800000, guid: c5a4af2e24e0ada428cae05f3eb1979b, type: 3}
+  dx11BokehScale: 1.2
+  dx11BokehIntensity: 2.5
+--- !u!114 &230842323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 230842320}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3457ffbdfe49ecb439c0aa827681c1cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &230842324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 230842320}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88fd1078db840024e8d123069eeaff0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cataractShader: {fileID: 4800000, guid: cbf2beb7c166dd743a363464c29ad4bb, type: 3}
+  brightness: 0.6
+  blurStrength: 0
+  blurWidth: 0
+--- !u!114 &230842325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 230842320}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e46582390560b8e438139dd5d2133cda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glaucomaShader: {fileID: 4800000, guid: 607bf443e9ce6954ba02c45a3c1f5fb4, type: 3}
+  radius: 0.4
+  soft: 0.5
+  circleColor: 0.1
+--- !u!114 &230842326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 230842320}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40cb59882a2dcc744be5f6c1975487e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellEyeShader: {fileID: 4800000, guid: fd8dc8fe41b82ca4f814695c1fbe57a8, type: 3}
+  yellEyeColor: {r: 1, g: 0.9756764, b: 0.75, a: 0}
+--- !u!114 &230842327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 230842320}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28c84d1d41322814da078737962a3b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  downsample: 1
+  blurSize: 0.1
+  blurIterations: 2
+  blurType: 0
+  blurShader: {fileID: 4800000, guid: 4b92b67f9d1796c46a81f8eb66659dcb, type: 3}
 --- !u!1 &230974258
 GameObject:
   m_ObjectHideFlags: 0
@@ -11182,7 +11301,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4500224035595864, guid: 029cd57c6acdbd947b2160e5636ae773, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -8.398
+      value: -8.83
       objectReference: {fileID: 0}
     - target: {fileID: 4500224035595864, guid: 029cd57c6acdbd947b2160e5636ae773, type: 2}
       propertyPath: m_LocalPosition.y
@@ -11190,7 +11309,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4500224035595864, guid: 029cd57c6acdbd947b2160e5636ae773, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -3.506
+      value: -3.46
       objectReference: {fileID: 0}
     - target: {fileID: 4500224035595864, guid: 029cd57c6acdbd947b2160e5636ae773, type: 2}
       propertyPath: m_LocalRotation.x
