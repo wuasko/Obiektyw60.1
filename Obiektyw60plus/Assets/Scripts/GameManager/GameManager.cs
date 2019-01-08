@@ -69,17 +69,18 @@ public class GameManager : MonoBehaviour {
 
     public void CheckIfInteractible()
     {
-        Debug.DrawRay(player.position, player.forward * 5);
+        Debug.Log("Checking if interactible");
+        Debug.DrawRay(player.position, player.forward);
         Ray ray = new Ray(player.position, player.forward);
 
-        if (Physics.Raycast(ray, out hit_Info, 10f))
+        if (Physics.Raycast(ray, out hit_Info, 100f))
         {
-            if (hit_Info.transform.gameObject.GetComponent("Wall"))
+            if (hit_Info.transform.gameObject.GetComponent<Wall>())
             {
                 ActivateColorPicker();
                 selectedGameObject = hit_Info.transform.gameObject;
             }
-            if (hit_Info.transform.gameObject.GetComponent("LightSwitch"))
+            if (hit_Info.transform.gameObject.tag == "Light Switch")
             {
                 ActivateLightSwitchButton();
                 selectedGameObject = hit_Info.transform.gameObject;
@@ -104,6 +105,7 @@ public class GameManager : MonoBehaviour {
 
     public void SetColor()
     {
+        Debug.Log("Setting Color");
         newColor = colorPicker.GetComponentInChildren<Image>().color;
         selectedGameObject.GetComponent<Renderer>().material.color = newColor;
     }
