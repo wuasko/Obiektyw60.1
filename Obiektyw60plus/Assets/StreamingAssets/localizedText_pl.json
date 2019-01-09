@@ -19,9 +19,10 @@
 {"key":"button_yes","value":"Tak"},
 {"key":"button_no","value":"Nie"},
 {"key":"yellow_toggle","value":"Zażółcenie gałki ocznej"},
-{"key":"about_description","value":"Celem projektu jest implementacja w czasie jednego semestru aplikacji wykorzystującej wirtualną rzeczywistość (VR) do symulacji poruszania się w przestrzeni wewnętrznej osoby przejawiającej typowe schorzenia osoby starszej jak zaćma czy zaburzenia orientacji. Projektowana aplikacja pozwoli na obrazowanie wpływu udogodnień wspomagających osoby starsze (np. dobór koloru, oświetlenia, kontrastów itp.) na odbieranie świata przez osoby starsze.\n\nRealizacja projektu nastąpi dzięki interdyscyplinarnej współpracy Wydziału AEI oraz Architektury. W ramach projektu nastąpi przebadanie możliwości dostępnych okularów VR, technik przekształcania obrazów, metod przekształcania i tworzenia modeli cyfrowych.\n\nEfektem finalnym projektu będzie narzędzie wykorzystujące aplikację rzeczywistości wirtualnej do wspomagania projektowania architektonicznego zgodnego z zasadami z perspektywy 60+, oraz umożliwiające wczucie się w problemy i potrzeby osób starszych."}.
-{"key":"label_pause","value":"Paused"},
+{"key":"about_description","value":"Celem projektu jest implementacja w czasie jednego semestru aplikacji wykorzystującej wirtualną rzeczywistość (VR) do symulacji poruszania się w przestrzeni wewnętrznej osoby przejawiającej typowe schorzenia osoby starszej jak zaćma czy zaburzenia orientacji. Projektowana aplikacja pozwoli na obrazowanie wpływu udogodnień wspomagających osoby starsze (np. dobór koloru, oświetlenia, kontrastów itp.) na odbieranie świata przez osoby starsze.\n\nRealizacja projektu nastąpi dzięki interdyscyplinarnej współpracy Wydziału AEI oraz Architektury. W ramach projektu nastąpi przebadanie możliwości dostępnych okularów VR, technik przekształcania obrazów, metod przekształcania i tworzenia modeli cyfrowych.\n\nEfektem finalnym projektu będzie narzędzie wykorzystujące aplikację rzeczywistości wirtualnej do wspomagania projektowania architektonicznego zgodnego z zasadami z perspektywy 60+, oraz umożliwiające wczucie się w problemy i potrzeby osób starszych."},
+{"key":"label_pause","value":"Pauza"},
 {"key":"depth_toggle","value":"Krótkowzroczność"},
 {"key":"cataract_toggle","value":"Zaćma"},
-{"key":"glaucoma_toggle","value":"Glaucoma"}
+{"key":"glaucoma_toggle","value":"Glaucoma"},
+{"key":"button_resume","value":"Powrót"}
 ]}
