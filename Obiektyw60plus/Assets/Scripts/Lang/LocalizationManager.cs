@@ -21,7 +21,16 @@ public class LocalizationManager : MonoBehaviour {
         }
         DontDestroyOnLoad(gameObject);
         // Initial language
-        LoadLocalizedText("localizedText_en.json");
+        if (PlayerPrefs.GetInt("lang") == 0)
+        {
+
+            LoadLocalizedText("localizedText_en.json");
+        }
+        else
+        {
+            LoadLocalizedText("localizedText_pl.json");
+        }
+        //LoadLocalizedText("localizedText_en.json");
     }
 
     public void LoadLocalizedText(string fileName)

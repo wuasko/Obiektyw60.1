@@ -116,8 +116,9 @@ public class MainMenu : MonoBehaviour
     // Keep the menu in front of player
     void Update()
     {
-        mainCanvas.transform.position = eyeEffectCamera.transform.position + eyeEffectCamera.transform.forward * 1;
-        mainCanvas.transform. rotation = new Quaternion(0.0f, eyeEffectCamera.transform.rotation.y, 0.0f, eyeEffectCamera.transform.rotation.w);
+        //Should we update the position of the canvas?
+        //mainCanvas.transform.position = eyeEffectCamera.transform.position + eyeEffectCamera.transform.forward * 1;
+        //mainCanvas.transform.rotation = new Quaternion(0.0f, eyeEffectCamera.transform.rotation.y, 0.0f, eyeEffectCamera.transform.rotation.w);
 
     }
 
