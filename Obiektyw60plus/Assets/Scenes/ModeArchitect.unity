@@ -29451,24 +29451,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300256, guid: 18a794da35528374f9143bce4f5d7a09, type: 3}
---- !u!1 &1207528652 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1846152864127896, guid: 066d60dcd85e32e41abfeaa37d6ef34b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1473535213}
---- !u!114 &1207528653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1207528652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe9aecd329caa6245bd5cfe2eb6100d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rayHit: 0
-  selectedObject: {fileID: 0}
 --- !u!1 &1218887988
 GameObject:
   m_ObjectHideFlags: 0
@@ -36022,7 +36004,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4019780264859172, guid: 066d60dcd85e32e41abfeaa37d6ef34b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.017
+      value: -5.083
       objectReference: {fileID: 0}
     - target: {fileID: 4019780264859172, guid: 066d60dcd85e32e41abfeaa37d6ef34b, type: 2}
       propertyPath: m_LocalPosition.y
@@ -36030,7 +36012,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4019780264859172, guid: 066d60dcd85e32e41abfeaa37d6ef34b, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -1.929
+      value: -1.692
       objectReference: {fileID: 0}
     - target: {fileID: 4019780264859172, guid: 066d60dcd85e32e41abfeaa37d6ef34b, type: 2}
       propertyPath: m_LocalRotation.x
@@ -38310,6 +38292,10 @@ Prefab:
     - target: {fileID: 1476773664495868, guid: cffce195d781b2b41a3c723a0c3711ae, type: 2}
       propertyPath: m_Name
       value: r.malujaca
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476773664495868, guid: cffce195d781b2b41a3c723a0c3711ae, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cffce195d781b2b41a3c723a0c3711ae, type: 2}
