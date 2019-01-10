@@ -4,14 +4,22 @@ using UnityEngine;
 
 public class DrawLaser : MonoBehaviour {
 
-    ParticleSystem particleSystem;
+
+    // Use this for initialization
+    public float DistanceToDrawLine = 10f;
+    Vector3 DistanceVector;
+    LineRenderer lineRenderer;
+    Vector3 pos1;
+    Vector3 pos2;
     public bool IsShowingLaser = false; 
     bool Started = false; //used for activating the ShowLaser coroutine only once 
 
     void Start()
     {
-        particleSystem = GetComponent<ParticleSystem>();
-        if (!particleSystem) Debug.Log("No particle system attached");
+        lineRenderer = GetComponent<LineRenderer>();
+        if (!lineRenderer) Debug.Log("No line renderer attached");
+        DistanceVector = new Vector3(0, 0, DistanceToDrawLine);
+        lineRenderer.widthMultiplier = 0.006f; //TODO change to 0
     }
 
     // Update is called once per frame
@@ -19,7 +27,7 @@ public class DrawLaser : MonoBehaviour {
     {
         if (IsShowingLaser && !Started)
         {
-            particleSystem.Play();
+            lineRenderer.widthMultiplier = 0.006f;
             StartCoroutine(ShowLaser());
             Started = true;
         }
@@ -27,7 +35,7 @@ public class DrawLaser : MonoBehaviour {
         if (!IsShowingLaser && Started)
         {
             StopCoroutine(ShowLaser());
-            particleSystem.Stop();
+            lineRenderer.widthMultiplier = 0;
             Started = false;
         }
     }
@@ -36,8 +44,11 @@ public class DrawLaser : MonoBehaviour {
     {
         while (IsShowingLaser)
         {
-            particleSystem.Emit(10);
-            particleSystem.emissionRate = 1000f;
+            pos1 = transform.position;
+            pos2 = transform.position + DistanceVector;
+            lineRenderer.SetPosition(0, pos1);
+            lineRenderer.SetPosition(1, pos2);
+
             yield return new WaitForSeconds(0.05f);
         }
     }
