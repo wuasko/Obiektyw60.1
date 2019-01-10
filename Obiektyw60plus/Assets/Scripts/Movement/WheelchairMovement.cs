@@ -14,7 +14,7 @@ public class WheelchairMovement : MonoBehaviour {
     public float m_MaxRotationSpeed = 20f; // maximum turning rate of wheelchair
     public float m_RotationDeccelration = 25f; // rate of losing turning speed on its own
 
-    public GameObject m_Remote; // remote for steering the wheelchair
+    ///public GameObject m_Remote; // remote for steering the wheelchair
 
     // Variables for holding user input
     private float m_MovementInput;
@@ -144,8 +144,8 @@ public class WheelchairMovement : MonoBehaviour {
     {
         if (collision.gameObject.name != "Floor")
         {
-            //m_MovementSpeed = 0;
-            //m_RotationSpeed = 0;
+            ///m_MovementSpeed = 0;
+            ///m_RotationSpeed = 0;
         }
     }
 }
