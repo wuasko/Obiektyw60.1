@@ -37,8 +37,11 @@ public class WheelchairMovement : MonoBehaviour {
     void Update()
     {
         // Get user input
-        m_MovementInput = Input.GetAxis("Vertical"); // W, S; moving joystick up or down
-        m_RotationInput = Input.GetAxis("Horizontal"); // A, D; moving joystick left or right
+        ///m_MovementInput = Input.GetAxis("Vertical"); // W, S; moving joystick up or down
+        ///m_RotationInput = Input.GetAxis("Horizontal"); // A, D; moving joystick left or right
+        m_MovementInput = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick).y + OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick).y;
+        m_RotationInput = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick).x + OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick).x;
+
         m_BreakInput = Input.GetAxis("Break"); // space
     }
 
