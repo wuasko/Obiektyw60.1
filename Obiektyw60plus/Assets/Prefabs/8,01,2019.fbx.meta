@@ -2291,14 +2291,990 @@ ModelImporter:
     4300634: kuchnia szafka zabudowa.001
     4300636: kuchnia zuflada.003
     4300638: kuchnia szuflada.002
+    6400000: 19 Kitchen
+    6400002: 1:1:6
+    6400004: 1:1:6.001
+    6400006: 1:2:6
+    6400008: 1:3:6
+    6400010: 1:4:6
+    6400012: '20 Tivoli '
+    6400014: 2:1
+    6400016: 2:1.004
+    6400018: 2:1.005
+    6400020: 2:10:6
+    6400022: 2:1:6
+    6400024: 2:1:6.001
+    6400026: 2:2:6
+    6400028: 2:2:6.001
+    6400030: 2:3:6
+    6400032: 2:4:6
+    6400034: 2:5:6
+    6400036: 2:6:6
+    6400038: 2:7:6
+    6400040: 2:8:6
+    6400042: 3:1:6
+    6400044: 3:2:6
+    6400046: 3:4:6
+    6400048: apple01
+    6400050: apple02
+    6400052: apple03
+    6400054: apple04
+    6400056: apple05
+    6400058: apple06
+    6400060: apple07
+    6400062: apple08
+    6400064: apple09
+    6400066: apple10
+    6400068: apple11
+    6400070: apple_003
+    6400072: apple_004
+    6400074: apple_005
+    6400076: apple_006
+    6400078: apple_007
+    6400080: apple_008
+    6400082: apple_009
+    6400084: apple_01
+    6400086: apple_010
+    6400088: apple_011
+    6400090: apple_012
+    6400092: apple_013
+    6400094: apple_014
+    6400096: apple_015
+    6400098: apple_016
+    6400100: apple_017
+    6400102: apple_018
+    6400104: apple_019
+    6400106: apple_02
+    6400108: apple_020
+    6400110: apple_023
+    6400112: arch49_031
+    6400114: arch49_032
+    6400116: armrest.000
+    6400118: armrest.001
+    6400120: armrest.004
+    6400122: backrest_2.000
+    6400124: backrest_2.001
+    6400126: backrest_2.004
+    6400128: "blat sp\xF3d.001"
+    6400130: bogre1
+    6400132: bogre2
+    6400134: bogre3
+    6400136: bogre4
+    6400138: bogres tal
+    6400140: bottom
+    6400142: Cube
+    6400144: Cube.001
+    6400146: Cube.002
+    6400148: Cube.003
+    6400150: Cube.004
+    6400152: Cube.005
+    6400154: Cube.006
+    6400156: Cube.007
+    6400158: Cube.008
+    6400160: Cube.009
+    6400162: Cube.010
+    6400164: Cube.011
+    6400166: cup
+    6400168: Cylinder.000
+    6400170: Cylinder.001
+    6400172: Cylinder.002
+    6400174: Cylinder.003
+    6400176: Cylinder.004
+    6400178: Cylinder.005
+    6400180: Cylinder.006
+    6400182: Cylinder.007
+    6400184: Cylinder.008
+    6400186: Cylinder.009
+    6400188: Cylinder.010
+    6400190: Cylinder.011
+    6400192: Cylinder04
+    6400194: Cylinder04.001
+    6400196: Cylinder04.002
+    6400198: drzwi.006
+    6400200: drzwi.007
+    6400202: drzwi.008
+    6400204: drzwi.009
+    6400206: drzwi.010
+    6400208: drzwi.011
+    6400210: etykieta.001
+    6400212: etykieta.002
+    6400214: fruktovnic
+    6400216: kubek
+    6400218: kuchenka.001
+    6400220: kuchnia blat
+    6400222: kuchnia cargo
+    6400224: kuchnia cargo szuflada
+    6400226: kuchnia cargo.001
+    6400228: kuchnia cargo.002
+    6400230: kuchnia cargo.003
+    6400232: kuchnia deska do krojenia
+    6400234: "kuchnia g\xF3rny zabudowa"
+    6400236: kuchnia laterze
+    6400238: "kuchnia szafka g\xF3ra.001"
+    6400240: "kuchnia szafka g\xF3ra.002"
+    6400242: "kuchnia szafka g\xF3rna.001"
+    6400244: "kuchnia szafka wysz\u0105ca.001"
+    6400246: kuchnia szafka zabudowa.001
+    6400248: kuchnia szuflada.002
+    6400250: kuchnia talerze
+    6400252: kuchnia talerze.001
+    6400254: kuchnia talerze.002
+    6400256: "kuchnia w\u0142\u0105cznik \u015Bwiat\u0142a"
+    6400258: "kuchnia zafka g\xF3ra.003"
+    6400260: kuchnia zuflada.003
+    6400262: Layer_11zb
+    6400264: leg
+    6400266: legs.000
+    6400268: legs.001
+    6400270: legs.005
+    6400272: legs.007
+    6400274: legs.010
+    6400276: Line016.001
+    6400278: Line016.002
+    6400280: Line018.001
+    6400282: Line018.002
+    6400284: me1.002
+    6400286: me1.003
+    6400288: me1.004
+    6400290: me1.1
+    6400292: me10.10
+    6400294: me11.11
+    6400296: me12.12
+    6400298: me13.13
+    6400300: me14.14
+    6400302: me15.15
+    6400304: me16.16
+    6400306: me2.001
+    6400308: me2.003
+    6400310: me2.2
+    6400312: me3.002
+    6400314: me3.3
+    6400316: me4.4
+    6400318: me6.6
+    6400320: me8.8
+    6400322: me9.9
+    6400324: "modu\u0142.box"
+    6400326: "modu\u0142.box.002"
+    6400328: "modu\u0142.box.004"
+    6400330: "modu\u0142.box.005"
+    6400332: "modu\u0142.box.006"
+    6400334: "modu\u0142.box.007"
+    6400336: "modu\u0142.box.009"
+    6400338: "modu\u0142.box.011"
+    6400340: "modu\u0142.box.012"
+    6400342: "modu\u0142.box.013"
+    6400344: "modu\u0142.box.014"
+    6400346: "modu\u0142.box.015"
+    6400348: "modu\u0142.panel \u015Bcienny.001"
+    6400350: "modu\u0142.szuflada. d\xF3\u0142"
+    6400352: "modu\u0142.szuflada. d\xF3\u0142.002"
+    6400354: "modu\u0142.szuflada. d\xF3\u0142.006"
+    6400356: "modu\u0142.szuflada. d\xF3\u0142.009"
+    6400358: "modu\u0142.szuflada. d\xF3\u0142.013"
+    6400360: "modu\u0142.szuflada. d\xF3\u0142.014"
+    6400362: "modu\u0142.szuflada. d\xF3\u0142.015"
+    6400364: "modu\u0142.szuflada.gora"
+    6400366: "modu\u0142.szuflada.gora.002"
+    6400368: "modu\u0142.szuflada.gora.006"
+    6400370: "modu\u0142.szuflada.gora.009"
+    6400372: "modu\u0142.szuflada.gora.013"
+    6400374: "modu\u0142.szuflada.gora.014"
+    6400376: "modu\u0142.szuflada.gora.015"
+    6400378: Obj_000049
+    6400380: Obj_000049.001
+    6400382: Obj_000049.002
+    6400384: Object001.001
+    6400386: Object001.002
+    6400388: Object01
+    6400390: Object01.001
+    6400392: Object01.002
+    6400394: Object02
+    6400396: pads
+    6400398: panel.003
+    6400400: panel.004
+    6400402: panel.005
+    6400404: piekarnik w sordku.001
+    6400406: piekarnik.001
+    6400408: Plane
+    6400410: Plane.000
+    6400412: Plane.001
+    6400414: Plane.002
+    6400416: Plane.003
+    6400418: Plane.004
+    6400420: Plane.005
+    6400422: Plane.006
+    6400424: Plane.007
+    6400426: Plane.008
+    6400428: Plane.009
+    6400430: Plane.010
+    6400432: Plane.011
+    6400434: Plane.012
+    6400436: Plane.013
+    6400438: Plane.014
+    6400440: Plane.015
+    6400442: Plane.016
+    6400444: Plane.017
+    6400446: Plane.018
+    6400448: Plane.019
+    6400450: Plane.020
+    6400452: Plane.021
+    6400454: Plane.022
+    6400456: Plane.023
+    6400458: Plane.024
+    6400460: Plane.025
+    6400462: Plane.026
+    6400464: Plane.027
+    6400466: Plane.028
+    6400468: Plane.029
+    6400470: Plane.030
+    6400472: Plane.031
+    6400474: Plane.032
+    6400476: Plane.033
+    6400478: Plane.034
+    6400480: Plane.053
+    6400482: plate_04
+    6400484: plate_04.001
+    6400486: plate_04.002
+    6400488: podajnik papieru
+    6400490: "pod\u0142oga prysznic"
+    6400492: "pod\u0142oga sypialnia"
+    6400494: "pod\u0142oga \u0142azienka"
+    6400496: "pod\u0142oga.kuchnia"
+    6400498: "pod\u0142oga.salon"
+    6400500: portfel saszetka
+    6400502: "przepok\xF3j drzwi"
+    6400504: "p\xF3\u0142ka"
+    6400506: "p\xF3\u0142ka.001"
+    6400508: "p\xF3\u0142ka.002"
+    6400510: "p\xF3\u0142ka.003"
+    6400512: "p\xF3\u0142ka.004"
+    6400514: "p\xF3\u0142ka.005"
+    6400516: "p\xF3\u0142ka.006"
+    6400518: "p\xF3\u0142ka.007"
+    6400520: "p\xF3\u0142ka.008"
+    6400522: "p\xF3\u0142ka.009"
+    6400524: "p\xF3\u0142ka.010"
+    6400526: salon alembik
+    6400528: salon alembik.001
+    6400530: salon alembik.002
+    6400532: salon alembik.003
+    6400534: salon alembik.004
+    6400536: salon alembik.005
+    6400538: salon alembik.006
+    6400540: salon alembik.007
+    6400542: salon alembik.008
+    6400544: salon alembik.009
+    6400546: salon alembik.010
+    6400548: salon alembik.011
+    6400550: salon alembik.012
+    6400552: salon alembik.013
+    6400554: salon alembik.014
+    6400556: salon alembik.015
+    6400558: salon alembik.016
+    6400560: salon alembik.017
+    6400562: salon alembik.018
+    6400564: "salon alembikokr\u0105g\u0142y"
+    6400566: "salon alembikokr\u0105g\u0142y.001"
+    6400568: "salon alembikokr\u0105g\u0142y.002"
+    6400570: "salon alembikokr\u0105g\u0142y.003"
+    6400572: "salon alembikokr\u0105g\u0142y.004"
+    6400574: "salon alembikokr\u0105g\u0142y.005"
+    6400576: "salon alembikokr\u0105g\u0142y.006"
+    6400578: "salon alembikokr\u0105g\u0142y.007"
+    6400580: "salon ksi\u0105\u017Cki"
+    6400582: "salon ksi\u0105\u017Cki.001"
+    6400584: salon lampa
+    6400586: "salon listwa zas\u0142ony"
+    6400588: salon okna tarasowe
+    6400590: salon okna tarasowe.004
+    6400592: salon szafka .000
+    6400594: salon szafka .001
+    6400596: salon szafka .002
+    6400598: salon szafka .003
+    6400600: salon szafka .004
+    6400602: salon szafka .005
+    6400604: salon szafka .006
+    6400606: salon szafka .007
+    6400608: salon szafka .008
+    6400610: salon szafka .009
+    6400612: salon szafka .010
+    6400614: salon szafka .011
+    6400616: salon szafka .012
+    6400618: salon szafka .013
+    6400620: salon szafka .014
+    6400622: salon szafka .015
+    6400624: salon szafka .016
+    6400626: salon szafka .017
+    6400628: salon szafka .018
+    6400630: salon szafka .019
+    6400632: salon szafka .020
+    6400634: salon szafka .021
+    6400636: salon szafka .022
+    6400638: salon szafka .023
+    6400640: salon szafka .024
+    6400642: salon szafka .025
+    6400644: salon szafka .026
+    6400646: salon szafka .027
+    6400648: salon szafka .028
+    6400650: salon szafka .029
+    6400652: salon szafka .030
+    6400654: salon szafka .031
+    6400656: salon szafka .032
+    6400658: salon szafka .blat
+    6400660: salon szafka .blat.001
+    6400662: salon szafka .blat.002
+    6400664: salon szafka .blat.003
+    6400666: salon szafka .blat.005
+    6400668: salon szafka .blat.006
+    6400670: salon szafka .blat.007
+    6400672: "salon szafka pod rega\u0142em"
+    6400674: salon tv
+    6400676: "salon w\u0142\u0105cznik \u015Bwiat\u0142\u0105"
+    6400678: "salon zas\u0142ony"
+    6400680: "salon zas\u0142ony.001"
+    6400682: "salon, zas\u0142ona za \u0142\xF3zkiem"
+    6400684: salon.biurko
+    6400686: salon.sufit jadalnia
+    6400688: "salon.sufit, k\u0105cik nad sof\u0105"
+    6400690: salon.sufit. miejsce pracy
+    6400692: salon.sufit.000
+    6400694: salon.sufit.002
+    6400696: salon.sufit.003
+    6400698: salon.sufit.004
+    6400700: sciany mieszkania
+    6400702: sciany mieszkania.kuchnia
+    6400704: sciany mieszkania.lazienka
+    6400706: sciany mieszkania.lazienka.001
+    6400708: sciany mieszkania.salon
+    6400710: sciany mieszkania.sypialnia
+    6400712: sciany mieszkania.sypialnia.001
+    6400714: seat.000
+    6400716: seat.001
+    6400718: seat.004
+    6400720: seat.005
+    6400722: spodek
+    6400724: sub01
+    6400726: sub02
+    6400728: sub02.002
+    6400730: sub02.003
+    6400732: sub02.004
+    6400734: sub03
+    6400736: sufit
+    6400738: support.000
+    6400740: support.001
+    6400742: support.005
+    6400744: support.007
+    6400746: support.008
+    6400748: support.011
+    6400750: sypialnia drzwi
+    6400752: sypialnia drzwi.001
+    6400754: sypialnia drzwi.002
+    6400756: sypialnia drzwi.003
+    6400758: sypialnia drzwi.004
+    6400760: sypialnia drzwi.005
+    6400762: sypialnia drzwi.006
+    6400764: sypialnia drzwi.007
+    6400766: sypialnia drzwi.008
+    6400768: "sypialnia ksi\u0105\u017Cki"
+    6400770: sypialnia okna tarasowe.002
+    6400772: sypialnia szafa
+    6400774: sypialnia szafa drzwi
+    6400776: sypialnia szafa drzwi.001
+    6400778: "sypialnia w\u0142\u0105cznik \u015Bwiat\u0142a"
+    6400780: "sypialnia zas\u0142ony"
+    6400782: "sypialnia zas\u0142ony.001"
+    6400784: "sypialnia zas\u0142ony.002"
+    6400786: "sypialnia \u0142\xF3zko"
+    6400788: sypialnia. sufit
+    6400790: sypialnia. sufit.001
+    6400792: "sypialnia.panel zas\u0142on"
+    6400794: sypialniaokna tarasowe.001
+    6400796: "szafa drzwi lewe g\xF3rne"
+    6400798: "szafa drzwi lewe g\xF3rne.001"
+    6400800: szafa drzwi prawe
+    6400802: "szafa drzwi prawe.g\xF3rne"
+    6400804: "szafa drzwi prawe.g\xF3rne.001"
+    6400806: "szafa przedpok\xF3j.001"
+    6400808: "szafka wisz\u0105ca.001"
+    6400810: szklanka 0
+    6400812: szklanka 0.001
+    6400814: szklanka 1
+    6400816: szklanka 1.001
+    6400818: szklanka 2
+    6400820: szklanka 2.001
+    6400822: szklanka 3
+    6400824: szklanka 3.001
+    6400826: szklanka 4
+    6400828: szklanka 4.001
+    6400830: szklanka 5
+    6400832: szklanka 5.001
+    6400834: szlanka 04
+    6400836: szlanka 04.001
+    6400838: szuflada .001
+    6400840: szuflada okno.001
+    6400842: tabletop.002
+    6400844: tabletop.003
+    6400846: toothbrus2
+    6400848: zlew.001
+    6400850: "\u0142azienka  umywalka"
+    6400852: "\u0142azienka drzwi"
+    6400854: "\u0142azienka drzwi.001"
+    6400856: "\u0142azienka krzese\u0142ko"
+    6400858: "\u0142azienka krzese\u0142kopod prysznic"
+    6400860: "\u0142azienka lustro"
+    6400862: "\u0142azienka okna tarasowe.003"
+    6400864: "\u0142azienka oparcie przy toalecie"
+    6400866: "\u0142azienka pasta"
+    6400868: "\u0142azienka prysznic pochwyty"
+    6400870: "\u0142azienka r\u0119cznik"
+    6400872: "\u0142azienka sufit \u015Bwiat\u0142o"
+    6400874: "\u0142azienka szczotka toaletowa"
+    6400876: "\u0142azienka toilet"
+    6400878: "\u0142azienka uchwyt boczny L"
+    6400880: "\u0142azienka uchwyt pionowy"
     10800000: Sun
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 12 - Default
+    second: {fileID: 2100000, guid: c61b14bd2076dfd4fbfbaeb8a807dc19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 18 - Default
+    second: {fileID: 2100000, guid: e54cd9b389cea37409136a8d1c41001c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 3iLleather White
+    second: {fileID: 2100000, guid: 652fb1ed098a4e14eb212b2169a9dc74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_Plastic_Ma
+    second: {fileID: 2100000, guid: 59d95f71735ba2143a64f046bf2a1d89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ceramiks y 2.001
+    second: {fileID: 2100000, guid: 09f75c7f80906ef4cafa144eb6f35842, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ceramiks y 2.002
+    second: {fileID: 2100000, guid: 0be337c9d7d5e7a43af485022a9f11b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GDLM2_M_39357554.001
+    second: {fileID: 2100000, guid: 506b2e2fbbae96e4180b211a25985a8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 642c2ee1c99490047aa6a6f37178beba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass.001
+    second: {fileID: 2100000, guid: 48022a7d6b9fff14b8da7480fd6e34b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass.002
+    second: {fileID: 2100000, guid: 8298b07c3605c6f4aa435eefada48d0e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass.003
+    second: {fileID: 2100000, guid: 89c180936eeafd243b080d44b8859ad1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass.004
+    second: {fileID: 2100000, guid: 2bddba65848451946882c4b1af1c2b86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Kruzki
+    second: {fileID: 2100000, guid: 62d6f445531aa4f4b91ddbdf62a5e202, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leather LS
+    second: {fileID: 2100000, guid: 913d9504f1d6e0e4bab08d2b5f791120, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 9f560fcbfbe377b41a865004f3322a7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #13'
+    second: {fileID: 2100000, guid: b4d9b8a22530b094eb706bcd8d67cd7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #189'
+    second: {fileID: 2100000, guid: 552f436ebfd6b3a499bf03c39917f41f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #190'
+    second: {fileID: 2100000, guid: 4505ed85c21b3884f86300bcbc0621ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #191'
+    second: {fileID: 2100000, guid: 256f026ce4f18a3419097dc31a39b238, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #193'
+    second: {fileID: 2100000, guid: 53d587b0c1b20e841a2b9f6689ddccde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #194'
+    second: {fileID: 2100000, guid: 327a2688f6d017a4abdb9abf4888323e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #195'
+    second: {fileID: 2100000, guid: 29afd436e59c8ab48b4e4dfc396f2db3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #196'
+    second: {fileID: 2100000, guid: a57ccb2e7ddf266468a1460dc5d90584, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #197'
+    second: {fileID: 2100000, guid: cc3bd6a5f1369fb4cab4ef29986b6e4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #198'
+    second: {fileID: 2100000, guid: 41df8b122e4a6224ea89e7d902fef911, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #199'
+    second: {fileID: 2100000, guid: 060f2c71699be8949a84ae74e150abb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #41.001'
+    second: {fileID: 2100000, guid: 613bf540bd76b6540bbc16276e9af6fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #41.002'
+    second: {fileID: 2100000, guid: 8b80e3e6aa40135428c3e9f0d99c566d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #43.001'
+    second: {fileID: 2100000, guid: a9fa6f41b79b7fa448152f3807490197, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #43.002'
+    second: {fileID: 2100000, guid: d4878fcc9621d7f4e8f8754657a7ef3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #55.001'
+    second: {fileID: 2100000, guid: 032486e9d49b2f34da8f227517a31c01, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #55.002'
+    second: {fileID: 2100000, guid: a00068cada2539e4e8a9d50e68467e70, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #67'
+    second: {fileID: 2100000, guid: 90e64df65f3a0324db74fc238ba431cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #68'
+    second: {fileID: 2100000, guid: 65dcf3d57ae16b84d984c03a8435b75f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Misc-Water.003
+    second: {fileID: 2100000, guid: 0a0c7b26364a77344b3e83b9ad043680, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Misc-Water.004
+    second: {fileID: 2100000, guid: ff42b544b2f764a48a6d139e6b504766, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: b409fc70036f0f143a92ccffa632619d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Standard_5
+    second: {fileID: 2100000, guid: 8971e780f922d9a48b4324de1216efae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vlevet
+    second: {fileID: 2100000, guid: dac2895c1e10aeb49b5a2df617baec0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _______________.001
+    second: {fileID: 2100000, guid: bdbf38fc4ea2c43419adcd3bb17432c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: balkon panele
+    second: {fileID: 2100000, guid: 9bd79ab7718698441b5439107c2bb871, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: books 1
+    second: {fileID: 2100000, guid: 60640f4c68d69774cbf817cf5212a7f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: books 1.001
+    second: {fileID: 2100000, guid: adb015cf458620e4393537c19863e27e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: broun
+    second: {fileID: 2100000, guid: 66630cf7717db6e46bffaede2f477c9b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chrom5
+    second: {fileID: 2100000, guid: f22b3e5cd12fdfe4296b653b86802c5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cover 1
+    second: {fileID: 2100000, guid: 191be4513e321004996c9fa298f99708, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cover 1-2
+    second: {fileID: 2100000, guid: 29cb43bb47340f94b9225cd7b9b59f63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cover 1-2.001
+    second: {fileID: 2100000, guid: fa679ad83fc56734db4b52e5c5559067, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cover 1.001
+    second: {fileID: 2100000, guid: e961536ab2d14ee439d3e5f4947d6f7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cup
+    second: {fileID: 2100000, guid: a2c9d18f1038e1a4aa9673ee5eaa03de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: drewno
+    second: {fileID: 2100000, guid: 996791fdba5f09548811dfe2fe6492d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: drzwi uchwyty
+    second: {fileID: 2100000, guid: 8b108466025905a42b18430d0528c93d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass popelov
+    second: {fileID: 2100000, guid: 4e96e8fcd89ab1b44ad938a1523b00ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass.001
+    second: {fileID: 2100000, guid: 48022a7d6b9fff14b8da7480fd6e34b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass.002
+    second: {fileID: 2100000, guid: 8298b07c3605c6f4aa435eefada48d0e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: green
+    second: {fileID: 2100000, guid: 3c1d8a7d157bdfb4e8aa8985c6a6dbf4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: green.001
+    second: {fileID: 2100000, guid: c4aacfa00a226d54e936d00527c96e04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kolor
+    second: {fileID: 2100000, guid: b65475c3e213ed44f8d10c774b9be7d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kuchnia.b
+    second: {fileID: 2100000, guid: 1621556a4e534654794d85a8159f5991, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kuchnia.b.002
+    second: {fileID: 2100000, guid: c71e7b071c9e74243ae15b8403218799, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kuchnia.sz1.002
+    second: {fileID: 2100000, guid: 1fbf7d06057d3574a8e86964e482756d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kuchnia.sz2.002
+    second: {fileID: 2100000, guid: cd16d41b47c621e499a33db8a58261a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ma1
+    second: {fileID: 2100000, guid: 25b5b57af26940646bdd9514f6af4294, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ma1.002
+    second: {fileID: 2100000, guid: 7b8a0778683f06b4fa41133d2e17c879, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ma2.001
+    second: {fileID: 2100000, guid: e5c617985f80306469c072bf347308a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat48.000
+    second: {fileID: 2100000, guid: ae3a9172953a9a5498832b85697a5928, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat48.001
+    second: {fileID: 2100000, guid: 6338c1bfeadf0124da821908241ab153, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat48.002
+    second: {fileID: 2100000, guid: eece819401ec5604ca85a198801b7008, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal.001
+    second: {fileID: 2100000, guid: 7c09e01993d4b344cba2c09640786b3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: obicie
+    second: {fileID: 2100000, guid: 30e5b78de0d9c994290f56b824fa3e47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "pod\u0142aga kuchnia"
+    second: {fileID: 2100000, guid: 041f198b2b5912d4c8fb97f95bb5588d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "pod\u0142oga balkon"
+    second: {fileID: 2100000, guid: 6d62df5b7c413fd418d77ab047e20e4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "pod\u0142oga salon"
+    second: {fileID: 2100000, guid: e591241b066d29f4ab8aad8901e5341c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "pod\u0142oga sypialnia"
+    second: {fileID: 2100000, guid: 0d5c9ff48162704489884d1ac304cb76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "pod\u0142oga \u0142azienka"
+    second: {fileID: 2100000, guid: 1ce35103423677648b006ffbbd2db391, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "pod\u0142oga \u0142azienka prysznic"
+    second: {fileID: 2100000, guid: fee9d34190c4623448979bfcc2a108df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: porcelana
+    second: {fileID: 2100000, guid: 978b0408dfe636a49a79f3a8b9b46f42, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: red.001
+    second: {fileID: 2100000, guid: 99923ff2be5b2234da5aaad8145f2b74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: salon lampa klosz
+    second: {fileID: 2100000, guid: 4a931a58ba8eb5841a15f9e04cdfde0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "salon swiat\u0142o zimne"
+    second: {fileID: 2100000, guid: 1cd1ea087a9200e4fb6fdd0c2b9b8357, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: salon szafka rtv
+    second: {fileID: 2100000, guid: 99e55abedec9d9948ba02724e2dc9033, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "salon \u015Bwiat\u0142o ciep\u0142e"
+    second: {fileID: 2100000, guid: 4646ba785a51fd34a8be8f23ce7aaec9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: side.001
+    second: {fileID: 2100000, guid: 0f6f2446781a3de41a6e8252cb9caad8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: st_wood.001
+    second: {fileID: 2100000, guid: 35ea01a87d07ed84691b52fef140e27c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: standart metal.001
+    second: {fileID: 2100000, guid: 873a6ac05a76cfd409521e5cc203f864, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sufit
+    second: {fileID: 2100000, guid: c17556392f3539d4a9569c3fa3e5c411, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "swiat\u0142o sypialnia"
+    second: {fileID: 2100000, guid: 9f8557e2b7852634cb49278f3e9975d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "swiat\u0142o sypialnia zas\u0142ony"
+    second: {fileID: 2100000, guid: af47442f5d1441e4996428e378d56430, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sypialnia sufit gwiazdy
+    second: {fileID: 2100000, guid: f84357fae7c756b45a53c8b67690ace9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "szk\u0142o"
+    second: {fileID: 2100000, guid: fed5c5643a0e4e54a8522340585da130, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tv
+    second: {fileID: 2100000, guid: af9d9ba53801b9d4fb1aac4abce81396, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: w  birch.002
+    second: {fileID: 2100000, guid: d760c92e3aecedf449cdaaeaedd47666, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: w black
+    second: {fileID: 2100000, guid: 59a89c409aacb5a41ae5f26a0c0baa6d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wire_115115115
+    second: {fileID: 2100000, guid: 1625bf5ce59eeb8499f44248e957e160, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood solid.019
+    second: {fileID: 2100000, guid: 330db33cbf09cce49a02cf213e129c68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "zas\u0142ony"
+    second: {fileID: 2100000, guid: 07ed90b6846cd5c4ca8cf8561dcc7193, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u0142azienka kolor"
+    second: {fileID: 2100000, guid: b3bd9570ece544d448507ec1d0ee00f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u0142azienka lustro"
+    second: {fileID: 2100000, guid: 2d25c755c1da72140ab851f55331e5db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u0142azienka porcelanka"
+    second: {fileID: 2100000, guid: 04e17a19c5d0c6d4db1893ebae4fd921, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u0142azienka uchwyty"
+    second: {fileID: 2100000, guid: da83843ee8b929e40a5005aa5095d573, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u0142azienka \u015Bwiat\u0142o"
+    second: {fileID: 2100000, guid: 2796d2175a67cfe45a879498b8738d98, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u015Bciana ca\u0142o\u015B\u0107"
+    second: {fileID: 2100000, guid: 9271ee50d460a7643a508fb3e86381a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u015Bciana sypialnia"
+    second: {fileID: 2100000, guid: 414458bf73d89d24d931e22a864b25e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u015Bciany kuchnia"
+    second: {fileID: 2100000, guid: caf72fd9392f2e441aa012471a017a09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u015Bciany salon i przedpok\xF3j"
+    second: {fileID: 2100000, guid: 7a9c1702bf3be5c479034d43e25fce66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u015Bciany sypialnia okno"
+    second: {fileID: 2100000, guid: 290936471cd61184d9db80f4bf12b07e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u015Bciany \u0142azienka"
+    second: {fileID: 2100000, guid: 2c5fd60e146ecd045aa6b528cf6efff9, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -2326,7 +3302,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
