@@ -38,9 +38,9 @@ public class ArchitectMenu : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        yellow = true;
-        depth = true;
-        glaucoma = true;
+        yellow = false;
+        depth = false;
+        glaucoma = false;
         cataract = false;
         glaucomaScript = eyesCamera.GetComponent<GlaucomaEffecet>();
         depthScript = eyesCamera.GetComponent<DepthOfField>();
