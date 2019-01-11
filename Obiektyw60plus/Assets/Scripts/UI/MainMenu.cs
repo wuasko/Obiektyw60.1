@@ -117,8 +117,8 @@ public class MainMenu : MonoBehaviour
     void Update()
     {
         //Should we update the position of the canvas?
-        //mainCanvas.transform.position = eyeEffectCamera.transform.position + eyeEffectCamera.transform.forward * 1;
-        //mainCanvas.transform.rotation = new Quaternion(0.0f, eyeEffectCamera.transform.rotation.y, 0.0f, eyeEffectCamera.transform.rotation.w);
+        mainCanvas.transform.position = eyeEffectCamera.transform.position + eyeEffectCamera.transform.forward * 1;
+        mainCanvas.transform.rotation = new Quaternion(0.0f, eyeEffectCamera.transform.rotation.y, 0.0f, eyeEffectCamera.transform.rotation.w);
 
     }
 
@@ -178,7 +178,7 @@ public class MainMenu : MonoBehaviour
     // Scene loader
     public void LoadScene(string sceneName)
     {
-        //SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(sceneName);
         Debug.Log(PlayerPrefs.GetInt("GameMode"));
     }
 

@@ -350,6 +350,7 @@
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\Helpers\OVRMicInput.cs" />
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceMod.cs" />
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceModContext.cs" />
+    <Compile Include="Assets\OVRToggle.cs" />
     <Compile Include="Assets\Scripts\Animations\Curtains\CurtainController.cs" />
     <Compile Include="Assets\Scripts\Animations\Doors\MoveDoor.cs" />
     <Compile Include="Assets\Scripts\Animations\Kitchen Shelves\MoveShelves.cs" />

@@ -23,11 +23,6 @@ public class ArchitectMenu : MonoBehaviour
     public GameObject optionsPanel;
     public GameObject confirmPanel;
 
-    public Toggle toggleYellowing;
-    public Toggle toggleDepth;
-    public Toggle toggleCataract;
-    public Toggle toggleGlaucoma;
-
     public Slider volumeSlider;
 
     private GlaucomaEffecet glaucomaScript;
@@ -37,10 +32,16 @@ public class ArchitectMenu : MonoBehaviour
 
     public AudioMixer audio;
 
+    private bool yellow, depth, glaucoma, cataract;
+
 
     // Use this for initialization
     void Start()
     {
+        yellow = true;
+        depth = true;
+        glaucoma = true;
+        cataract = false;
         glaucomaScript = eyesCamera.GetComponent<GlaucomaEffecet>();
         depthScript = eyesCamera.GetComponent<DepthOfField>();
         yellowScript = eyesCamera.GetComponent<YellowEyeEffect>();
@@ -50,18 +51,6 @@ public class ArchitectMenu : MonoBehaviour
         confirmPanel.SetActive(false);
         wheelchairToggle.onValueChanged.AddListener(delegate {
             wheelchairToggleChanged(wheelchairToggle);
-        });
-        toggleYellowing.onValueChanged.AddListener(delegate {
-            yellowToggleChanged(toggleYellowing);
-        });
-        toggleDepth.onValueChanged.AddListener(delegate {
-            depthToggleChanged(toggleDepth);
-        });
-        toggleCataract.onValueChanged.AddListener(delegate {
-            cataractToggleChanged(toggleCataract);
-        });
-        toggleGlaucoma.onValueChanged.AddListener(delegate {
-            glaucomaToggleChanged(toggleGlaucoma);
         });
 
         volumeSlider.value = PlayerPrefs.GetFloat("MusicVolume", 0.75f);
@@ -76,26 +65,58 @@ public class ArchitectMenu : MonoBehaviour
         audio.SetFloat("MusicVolume", Mathf.Log10(sliderValue) * 20);
     }
 
-    private void cataractToggleChanged(Toggle toggleCataract)
+    public void yellowToggle()
     {
-        //cataractScript.enabled = toggleCataract.isOn;
-        cataractScript.ChangeEnableOfCataract(toggleCataract.isOn);
+        Debug.Log("Yellow clicked");
+        if (yellow)
+        {
+            yellowScript.enabled = false;
+            yellow = false;
+        }
+        else
+        {
+            yellow = true;
+            yellowScript.enabled = true;
+        }
     }
-
-    private void glaucomaToggleChanged(Toggle toggleGlaucoma)
+    public void depthToggle()
     {
-        glaucomaScript.enabled = toggleGlaucoma.isOn;
+        if (depth)
+        {
+            depth = false;
+            depthScript.enabled = false;
+        }
+        else
+        {
+            depth = true;
+            depthScript.enabled = true;
+        }
     }
-
-    private void depthToggleChanged(Toggle toggleDepth)
+    public void glaucomaToggle()
     {
-        depthScript.enabled = toggleDepth.isOn;
+        if (glaucoma)
+        {
+            glaucoma = false;
+            glaucomaScript.enabled = false;
+        }
+        else
+        {
+            glaucoma = true;
+            glaucomaScript.enabled = true;
+        }
     }
-
-    private void yellowToggleChanged(Toggle toggleYellowing)
+    public void cataractToggle()
     {
-        yellowScript.enabled = toggleYellowing.isOn;
-        Debug.Log("yellow go!");
+        if (glaucoma)
+        {
+            cataract = false;
+            cataractScript.enabled = false;
+        }
+        else
+        {
+            cataract = true;
+            cataractScript.enabled = true;
+        }
     }
 
     private void wheelchairToggleChanged(Toggle wheelchairToggle)
@@ -116,7 +137,9 @@ public class ArchitectMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //architectCanvas.transform.position = eyesCamera.transform.position + eyesCamera.transform.forward * 1;
+        //architectCanvas.transform.rotation = new Quaternion(0.0f, eyesCamera.transform.rotation.y, 0.0f, eyesCamera.transform.rotation.w);
+        //architectCanvas.transform.rotation = new Quaternion(0.0f, eyesCamera.transform.rotation.y, 0.0f, eyesCamera.transform.rotation.w);
     }
 
     public void openSettings()

@@ -184,7 +184,7 @@ public class MoveShelves : MonoBehaviour {
 
         SkipToEnd:
         {
-            Debug.Log("stepped out, nothing to move");
+
             if(NumShelvesAway == 0) IsShelfSelected = false;
         }
 

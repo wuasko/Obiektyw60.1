@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1119,7 +1119,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 1.055
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1215,6 +1215,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11414578, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 14300000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
+      propertyPath: EnableRotation
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3304,8 +3312,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1648185122}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.694, y: 0, z: -4.2097}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalPosition: {x: 8.39, y: 0, z: -2.3}
+  m_LocalScale: {x: 0.1, y: 0.11, z: 0.1}
   m_Children:
   - {fileID: 1135032174}
   - {fileID: 391427943}
@@ -4196,50 +4204,50 @@ Prefab:
     - target: {fileID: 224261958834404638, guid: 30b2c8e690d1ca04dbae2827631a63d3,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.4949495
       objectReference: {fileID: 0}
     - target: {fileID: 224261958834404638, guid: 30b2c8e690d1ca04dbae2827631a63d3,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224279280545273612, guid: 30b2c8e690d1ca04dbae2827631a63d3,
         type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.4949495
       objectReference: {fileID: 0}
     - target: {fileID: 224279280545273612, guid: 30b2c8e690d1ca04dbae2827631a63d3,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.4949495
       objectReference: {fileID: 0}
     - target: {fileID: 224279280545273612, guid: 30b2c8e690d1ca04dbae2827631a63d3,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224134480668850192, guid: 30b2c8e690d1ca04dbae2827631a63d3,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.4005895
       objectReference: {fileID: 0}
     - target: {fileID: 224134480668850192, guid: 30b2c8e690d1ca04dbae2827631a63d3,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224134480668850192, guid: 30b2c8e690d1ca04dbae2827631a63d3,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 0.99999976
       objectReference: {fileID: 0}
     - target: {fileID: 1223892774588838, guid: 30b2c8e690d1ca04dbae2827631a63d3, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1204491531621636, guid: 30b2c8e690d1ca04dbae2827631a63d3, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1878555821987080, guid: 30b2c8e690d1ca04dbae2827631a63d3, type: 2}
       propertyPath: m_TagString
@@ -4256,6 +4264,10 @@ Prefab:
     - target: {fileID: 1919306606181008, guid: 30b2c8e690d1ca04dbae2827631a63d3, type: 2}
       propertyPath: m_Name
       value: TextLanguage
+      objectReference: {fileID: 0}
+    - target: {fileID: 1496990829150216, guid: 30b2c8e690d1ca04dbae2827631a63d3, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114734067636525714, guid: 30b2c8e690d1ca04dbae2827631a63d3, type: 2}
