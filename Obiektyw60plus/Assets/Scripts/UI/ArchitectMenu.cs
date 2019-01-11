@@ -13,6 +13,9 @@ public class ArchitectMenu : MonoBehaviour
 
     public Toggle wheelchairToggle;
     public GameObject wheelchairMesh;
+    public GameObject player;
+    public GameObject OVRPlayerController;
+
     public GameObject eyesCamera;
     public GameObject architectCanvas;
 
@@ -97,6 +100,9 @@ public class ArchitectMenu : MonoBehaviour
 
     private void wheelchairToggleChanged(Toggle wheelchairToggle)
     {
+        ///Component wheelchairMovement = player.GetComponent("Wheelchair Movement");
+
+
         if (wheelchairToggle.isOn)
         {
             wheelchairMesh.SetActive(true);
