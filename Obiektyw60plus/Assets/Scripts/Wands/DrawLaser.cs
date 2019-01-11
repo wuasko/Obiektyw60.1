@@ -7,7 +7,6 @@ public class DrawLaser : MonoBehaviour {
 
     // Use this for initialization
     public float DistanceToDrawLine = 10f;
-    Vector3 DistanceVector;
     LineRenderer lineRenderer;
     Vector3 pos1;
     Vector3 pos2;
@@ -18,16 +17,20 @@ public class DrawLaser : MonoBehaviour {
     {
         lineRenderer = GetComponent<LineRenderer>();
         if (!lineRenderer) Debug.Log("No line renderer attached");
-        DistanceVector = new Vector3(0, 0, DistanceToDrawLine);
         lineRenderer.widthMultiplier = 0.006f; //TODO change to 0
+        pos1 = transform.position;
+        pos2 = transform.position + transform.forward * 0.01f;
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        lineRenderer.SetPosition(0, pos1);
+        lineRenderer.SetPosition(1, pos2);
+
         if (IsShowingLaser && !Started)
         {
-            lineRenderer.widthMultiplier = 0.006f;
             StartCoroutine(ShowLaser());
             Started = true;
         }
@@ -35,7 +38,8 @@ public class DrawLaser : MonoBehaviour {
         if (!IsShowingLaser && Started)
         {
             StopCoroutine(ShowLaser());
-            lineRenderer.widthMultiplier = 0;
+            pos1 = transform.position;
+            pos2 = transform.position + transform.forward * 0.01f;
             Started = false;
         }
     }
@@ -45,7 +49,7 @@ public class DrawLaser : MonoBehaviour {
         while (IsShowingLaser)
         {
             pos1 = transform.position;
-            pos2 = transform.position + DistanceVector;
+            pos2 = transform.position + transform.forward * DistanceToDrawLine;
             lineRenderer.SetPosition(0, pos1);
             lineRenderer.SetPosition(1, pos2);
 
