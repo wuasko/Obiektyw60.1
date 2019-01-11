@@ -4338,7 +4338,8 @@ MonoBehaviour:
   m_snapPosition: 0
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
-  m_grabPoints: []
+  m_grabPoints:
+  - {fileID: 0}
   m_materialColorField: 
 --- !u!114 &161401956
 MonoBehaviour:
@@ -11644,7 +11645,8 @@ MonoBehaviour:
   m_snapPosition: 0
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
-  m_grabPoints: []
+  m_grabPoints:
+  - {fileID: 432473597}
   m_materialColorField: 
 --- !u!114 &432473601
 MonoBehaviour:
@@ -13026,7 +13028,8 @@ MonoBehaviour:
   m_snapPosition: 0
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
-  m_grabPoints: []
+  m_grabPoints:
+  - {fileID: 0}
   m_materialColorField: 
 --- !u!114 &487715582
 MonoBehaviour:
@@ -13793,6 +13796,7 @@ GameObject:
   - component: {fileID: 535004290}
   - component: {fileID: 535004289}
   - component: {fileID: 535004288}
+  - component: {fileID: 535004295}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -13908,6 +13912,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &535004295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 535004287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+  m_materialColorField: 
 --- !u!1 &536979819
 GameObject:
   m_ObjectHideFlags: 0
@@ -18921,7 +18942,8 @@ MonoBehaviour:
   m_snapPosition: 0
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
-  m_grabPoints: []
+  m_grabPoints:
+  - {fileID: 0}
   m_materialColorField: 
 --- !u!114 &716147054
 MonoBehaviour:
@@ -20381,7 +20403,8 @@ MonoBehaviour:
   m_snapPosition: 0
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
-  m_grabPoints: []
+  m_grabPoints:
+  - {fileID: 0}
   m_materialColorField: 
 --- !u!114 &766721755
 MonoBehaviour:
@@ -20849,11 +20872,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4019780264859172, guid: 066d60dcd85e32e41abfeaa37d6ef34b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -9.18
+      value: -9.195
       objectReference: {fileID: 0}
     - target: {fileID: 4019780264859172, guid: 066d60dcd85e32e41abfeaa37d6ef34b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.14
+      value: 1.182
       objectReference: {fileID: 0}
     - target: {fileID: 4019780264859172, guid: 066d60dcd85e32e41abfeaa37d6ef34b, type: 2}
       propertyPath: m_LocalPosition.z
@@ -23025,7 +23048,8 @@ MonoBehaviour:
   m_snapPosition: 0
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
-  m_grabPoints: []
+  m_grabPoints:
+  - {fileID: 0}
   m_materialColorField: 
 --- !u!114 &852933032
 MonoBehaviour:
@@ -32709,7 +32733,8 @@ MonoBehaviour:
   m_snapPosition: 0
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
-  m_grabPoints: []
+  m_grabPoints:
+  - {fileID: 0}
   m_materialColorField: 
 --- !u!114 &1184022750
 MonoBehaviour:
@@ -35234,7 +35259,8 @@ MonoBehaviour:
   m_snapPosition: 0
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
-  m_grabPoints: []
+  m_grabPoints:
+  - {fileID: 0}
   m_materialColorField: 
 --- !u!114 &1280307866
 MonoBehaviour:
@@ -42261,7 +42287,8 @@ MonoBehaviour:
   m_snapPosition: 0
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
-  m_grabPoints: []
+  m_grabPoints:
+  - {fileID: 0}
   m_materialColorField: 
 --- !u!114 &1583046621
 MonoBehaviour:
@@ -43513,7 +43540,8 @@ MonoBehaviour:
   m_snapPosition: 0
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
-  m_grabPoints: []
+  m_grabPoints:
+  - {fileID: 0}
   m_materialColorField: 
 --- !u!114 &1645359422
 MonoBehaviour:
@@ -48140,7 +48168,6 @@ GameObject:
   - component: {fileID: 1837398389}
   - component: {fileID: 1837398388}
   - component: {fileID: 1837398387}
-  - component: {fileID: 1837398392}
   - component: {fileID: 1837398391}
   - component: {fileID: 1837398390}
   m_Layer: 0
@@ -48249,21 +48276,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedObject: {fileID: 0}
   cnt: 0
---- !u!54 &1837398392
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1837398385}
-  serializedVersion: 2
-  m_Mass: 200
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1842411687
 GameObject:
   m_ObjectHideFlags: 0
@@ -52971,7 +52983,8 @@ MonoBehaviour:
   m_snapPosition: 0
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
-  m_grabPoints: []
+  m_grabPoints:
+  - {fileID: 0}
   m_materialColorField: 
 --- !u!114 &1991314140
 MonoBehaviour:
