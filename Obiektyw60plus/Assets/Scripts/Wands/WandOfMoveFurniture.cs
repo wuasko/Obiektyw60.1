@@ -69,11 +69,11 @@ public class WandOfMoveFurniture : MonoBehaviour
 
 
         //TODO FIX this below (add the gameobject to scene with scripts)
-        //SomethingIsUsed = curtainController.Use || moveShelves.IsShelfSelected || move;
+        SomethingIsUsed = curtainController.Use || moveShelves.IsShelfSelected || move;
 
-        //if (IsSelectedShelf() && MovementInput > 0 && !SomethingIsUsed) moveShelves.IsShelfSelected = true; //moving shelves
-        //if (IsSelectedDoor() && MovementInput > 0 && !SomethingIsUsed) moveDoor.Move = true; //moving door
-        //if (IsSelectedCurtain() && MovementInput > 0 && !SomethingIsUsed) curtainController.Use = true; //using curtains
+        if (IsSelectedShelf() && MovementInput > 0 && !SomethingIsUsed) moveShelves.IsShelfSelected = true; //moving shelves
+        if (IsSelectedDoor() && MovementInput > 0 && !SomethingIsUsed) moveDoor.Move = true; //moving door
+        if (IsSelectedCurtain() && MovementInput > 0 && !SomethingIsUsed) curtainController.Use = true; //using curtains
 
         if (/*/*IsSelectedMovableObject() &&*/ MovementInput > 0) { move = true; }
         else { move = false; }
