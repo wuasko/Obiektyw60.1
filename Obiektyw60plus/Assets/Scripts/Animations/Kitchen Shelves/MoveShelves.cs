@@ -67,13 +67,7 @@ public class MoveShelves : MonoBehaviour {
 
 
     // Update is called once per frame
-    void Update () {
-
-        if (Input.GetKeyDown("x"))
-        {
-            IsShelfSelected = true;
-            NumShelvesAway = 5;
-        }
+    void FixedUpdate () {
         
 
         if (IsShelfSelected)
@@ -83,7 +77,7 @@ public class MoveShelves : MonoBehaviour {
             {
                 NumShelvesAway = FindClosestShelf() - FindSelectedObject(); //TODO uncomment when done testing
                 if (NumShelvesAway == 0) goto SkipToEnd; //Selecting the same shelf that we are standing near
-                Debug.Log(NumShelvesAway);
+                //Debug.Log(NumShelvesAway);
                 if (NumShelvesAway < 0) NumShelvesAway = ShelvesNum + NumShelvesAway; //TODO uncomment when done testing
                 //Depending on the distance assign moving right or left
                 if (NumShelvesAway > ShelvesNum / 2)
@@ -101,7 +95,7 @@ public class MoveShelves : MonoBehaviour {
                 NumShelvesCnt = NumShelvesAway;
                 Colliders(false);
                 CollidersActive = false;
-                Debug.Log("Going " + (GoingRight ? "right" : "left"));
+                //Debug.Log("Going " + (GoingRight ? "right" : "left"));
             }
             
             //Move shelves one position right or left
@@ -111,7 +105,7 @@ public class MoveShelves : MonoBehaviour {
 
                 int i;
                 i = ShelvesPosControl;
-                Debug.Log("ShelvesPosControl: " + ShelvesPosControl);
+                //Debug.Log("ShelvesPosControl: " + ShelvesPosControl);
 
                 foreach (Transform Shelf in KitchenShelf.transform)
                 {
@@ -136,7 +130,7 @@ public class MoveShelves : MonoBehaviour {
                     i++;
                     if (i == ShelvesNum) i = 0;
                 }
-                Debug.Log("num"+NumShelvesCnt);
+
                 if (NumShelvesCnt <= 1) //stop moving, by changing IsShelfSelected to false
                 {
                     
@@ -248,25 +242,13 @@ public class MoveShelves : MonoBehaviour {
     {
         //int Index = 0;
         GameObject selectedObject = GameObject.Find(CastingToObject.selectedObject); //TODO uncomment when done testing
-        if (!selectedObject) Debug.Log("no object selected"); //TODO uncomment when done testing
 
-        //string name = "box13"; //TODO comment when done testing
-        //string IndexStr = name.Substring(3); //TODO comment when done testing
-
-        //string IndexStr = selectedObject.name.Substring(3); //TODO uncomment when done testing
-
-        //if (!Int32.TryParse(IndexStr, out Index))
-        //{
-        //    Index = -1;
-        //}
 
         int i = 0;
         foreach (Transform Shelf in KitchenShelf.transform)
         {
             if (Shelf.name == selectedObject.name)
             {
-                //Debug.Log("Selected object: " + selectedObject.name);
-                //Debug.Log("Selected object's index: " + i);
                 return i;
             }
             i++;
@@ -296,7 +278,9 @@ public class MoveShelves : MonoBehaviour {
 
     IEnumerator LateColliders(bool On)
     {
-        yield return new WaitForSeconds(1f);
+        float time = 3f;
+        if (ShelfSpeed < 3f) time = 6f;
+        yield return new WaitForSeconds(time);
         Colliders(On);
     }
 

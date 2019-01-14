@@ -81,6 +81,8 @@ public class CurtainController : MonoBehaviour {
         {
             if (Use)
             {
+
+                //curtainLeft.GetComponent<HighlightSelected>().rayHit = true;
                 IsPlayingForward = !IsPlayingForward;
                 curtainLeftAnim.Play(leftAnimName);
                 curtainRightAnim.Play(rightAnimName);
