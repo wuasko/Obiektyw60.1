@@ -82,10 +82,6 @@ public class MovableObject : MonoBehaviour {
 
             yield return new WaitForSeconds(0.05f);
 
-            print("moving moving ...");
-
-
-            //rigidbody.MovePosition(transform.position + wandDirection * Time.fixedDeltaTime);
             
         }
     }
