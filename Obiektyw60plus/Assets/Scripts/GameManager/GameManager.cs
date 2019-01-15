@@ -24,13 +24,22 @@ public class GameManager : MonoBehaviour {
     [SerializeField]
     private GameObject ObjectToChangeMaterial;
     [SerializeField]
+    private GameObject SecondObjectToChangeMaterial;
+    [SerializeField]
     private Color FirstColor;
     [SerializeField]
     private Color SecondColor;
     [SerializeField]
     private Color ThirdColor;
+    [SerializeField]
+    private Color FourthColor;
+    [SerializeField]
+    private Color FifthColor;
+    [SerializeField]
+    private Color SixthColor;
 
     private Material MaterialToChange;
+    private Material SecondMaterialToChange;
     private Color newColor;
     private RaycastHit hit_Info;
     private GameObject selectedGameObject;
@@ -40,6 +49,7 @@ public class GameManager : MonoBehaviour {
     {
         setNumber = 1;
         MaterialToChange = ObjectToChangeMaterial.GetComponent<Renderer>().sharedMaterial;
+        SecondMaterialToChange = SecondObjectToChangeMaterial.GetComponent<Renderer>().sharedMaterial;
     }
 
     public void ToggleDirectional()
@@ -116,14 +126,17 @@ public class GameManager : MonoBehaviour {
             {
             case 1:
                 MaterialToChange.color = SecondColor;
+                SecondMaterialToChange.color = FifthColor;
                 setNumber++;
                 break;
             case 2:
                 MaterialToChange.color = ThirdColor;
+                SecondMaterialToChange.color = SixthColor;
                 setNumber++;
                 break;
             case 3:
                 MaterialToChange.color = FirstColor;
+                SecondMaterialToChange.color = FourthColor;
                 setNumber = 1;
                 break;
         }

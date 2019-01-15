@@ -3,12 +3,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using OculusSampleFramework;
-
+/// <summary>
+/// This script is a controller for other scripts that WandOfMoveFurniture uses
+/// It checks if the user is currently grabbing an object using DistanceGrabbable script
+/// 
+/// It controls:
+/// - scripts for animations: CurtainController, MoveDoor
+/// - script for moving shelves
+/// - script for casting spells
+/// - script for drawing laser pointer
+/// - script for detecting which object we hit
+/// 
+/// It also finds the point to move for MovableObject script
+/// and sets move variable to turn on/off this script
+/// </summary>
 public class WandOfMoveFurniture : MonoBehaviour
 {
 
     public bool move = false;
     public Vector3 PointToGo;
+    public string CurtainObjectName = "zaslony";
 
     DistanceGrabbable distanceGrabbable;
     CastingToObject castingToObject;
@@ -17,6 +31,8 @@ public class WandOfMoveFurniture : MonoBehaviour
     MoveDoor moveDoor;
     CurtainController curtainController;
     CastSpells castSpells;
+
+    Collider WandCollider; //Collider used for ignoring collison with player
 
     GameObject KitchenShelf;
     GameObject GameManager;
@@ -68,7 +84,6 @@ public class WandOfMoveFurniture : MonoBehaviour
         //Debug.Log("Secondary thumbstick " + Input.GetAxis("Oculus_CrossPlatform_SecondaryThumbstick"));
 
 
-        //TODO FIX this below (add the gameobject to scene with scripts)
         SomethingIsUsed = curtainController.Use || moveShelves.IsShelfSelected || move;
 
         if (IsSelectedShelf() && MovementInput > 0 && !SomethingIsUsed) moveShelves.IsShelfSelected = true; //moving shelves
@@ -145,7 +160,7 @@ public class WandOfMoveFurniture : MonoBehaviour
         GameObject selectedObject = GameObject.Find(CastingToObject.selectedObject);
         //Debug.Log(selectedObject.name);
         if (!selectedObject) return false;
-        if (selectedObject.name == "zaslony") //This is an empty gameobject with boxcollider placed in front of curtains
+        if (selectedObject.name == CurtainObjectName) //This is an empty gameobject with boxcollider placed in front of curtains
         {
             return true;
         }
@@ -161,6 +176,16 @@ public class WandOfMoveFurniture : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.forward, out objectHit, 50))
         {
             PointToGo = objectHit.point;
+        }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "PlayerTag")
+        {
+            Debug.Log("collision omitted");
+            Collider PlayerCollider = collision.gameObject.GetComponent<Collider>();
+            Physics.IgnoreCollision(PlayerCollider, WandCollider);
         }
     }
 

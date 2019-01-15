@@ -24,6 +24,10 @@ public class ArchitectMenu : MonoBehaviour
     public GameObject confirmPanel;
 
     public Slider volumeSlider;
+    public Slider sliderYellow;
+    public Slider sliderDepth;
+    public Slider sliderCataract;
+    public Slider sliderGlaucoma;
 
     private GlaucomaEffecet glaucomaScript;
     private DepthOfField depthScript;
@@ -49,8 +53,22 @@ public class ArchitectMenu : MonoBehaviour
         architectPanel.SetActive(true);
         optionsPanel.SetActive(false);
         confirmPanel.SetActive(false);
+
+        cataractScript.enabled = true;
         wheelchairToggle.onValueChanged.AddListener(delegate {
             wheelchairToggleChanged(wheelchairToggle);
+        });
+        sliderYellow.onValueChanged.AddListener(delegate {
+            sliderYellowToggle(sliderYellow);
+        });
+        sliderDepth.onValueChanged.AddListener(delegate {
+            sliderDepthToggle(sliderDepth);
+        });
+        sliderCataract.onValueChanged.AddListener(delegate {
+            sliderCataractToggle(sliderCataract);
+        });
+        sliderGlaucoma.onValueChanged.AddListener(delegate {
+            sliderGlaucomaToggle(sliderGlaucoma);
         });
 
         volumeSlider.value = PlayerPrefs.GetFloat("MusicVolume", 0.75f);
@@ -67,7 +85,7 @@ public class ArchitectMenu : MonoBehaviour
 
     public void yellowToggle()
     {
-        Debug.Log("Yellow clicked");
+
         if (yellow)
         {
             yellowScript.enabled = false;
@@ -77,6 +95,68 @@ public class ArchitectMenu : MonoBehaviour
         {
             yellow = true;
             yellowScript.enabled = true;
+        }
+    }
+    public void sliderYellowToggle(Slider slider)
+    {
+        switch ((int)slider.value)
+        {
+            case 0:
+                yellowScript.enabled = false;
+                yellow = false;
+                break;
+            case 1:
+                yellow = true;
+                yellowScript.enabled = true;
+                break;
+
+
+        } 
+    }
+    public void sliderDepthToggle(Slider slider)
+    {
+        switch ((int)slider.value)
+        {
+            case 0:
+                depthScript.enabled = false;
+                depth = false;
+                break;
+            case 1:
+                depth = true;
+                depthScript.enabled = true;
+                break;
+
+
+        }
+    }
+    public void sliderCataractToggle(Slider slider)
+    {
+        switch ((int)slider.value)
+        {
+            case 0:
+                //cataractScript.enabled = false;
+                cataractScript.ChangeEnableOfCataract(false);
+
+                cataract = false;
+                break;
+            case 1:
+                cataract = true;
+                cataractScript.ChangeEnableOfCataract(true);
+                break;
+        }
+    }
+    public void sliderGlaucomaToggle(Slider slider)
+    {
+        switch ((int)slider.value)
+        {
+            case 0:
+                glaucomaScript.enabled = false;
+                glaucoma = false;
+                break;
+            case 1:
+                glaucoma = true;
+                glaucomaScript.enabled = true;
+                break;
         }
     }
     public void depthToggle()
