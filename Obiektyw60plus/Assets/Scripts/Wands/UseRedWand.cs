@@ -68,7 +68,7 @@ public class UseRedWand : MonoBehaviour {
 
         //realforward = transform.forward * 10000f + rotate90;
        
-        Debug.DrawRay(transform.position, transform.forward, Color.blue, 2);
+
         // Shoot raycast
         if (Physics.Raycast(transform.position, transform.forward, out objectHit, 50))
         {

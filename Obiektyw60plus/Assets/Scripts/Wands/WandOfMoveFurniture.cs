@@ -171,7 +171,6 @@ public class WandOfMoveFurniture : MonoBehaviour
     {
         RaycastHit objectHit;
 
-        Debug.DrawRay(transform.position, transform.forward, Color.blue, 2);
         // Shoot raycast
         if (Physics.Raycast(transform.position, transform.forward, out objectHit, 50))
         {
@@ -184,7 +183,7 @@ public class WandOfMoveFurniture : MonoBehaviour
         if (collision.gameObject.tag == "PlayerTag")
         {
             Debug.Log("collision omitted");
-            Collider PlayerCollider = collision.gameObject.GetComponent<Collider>();
+            Collider PlayerCollider = collision.gameObject.GetComponent<BoxCollider>();
             Physics.IgnoreCollision(PlayerCollider, WandCollider);
         }
     }

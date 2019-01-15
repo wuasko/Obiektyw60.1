@@ -111,7 +111,6 @@ namespace OculusSampleFramework
     void Update()
         {
 
-            Debug.DrawRay(transform.position, transform.forward, Color.red, 0.1f);
             
             DistanceGrabbable target;
             Collider targetColl;
@@ -264,7 +263,7 @@ namespace OculusSampleFramework
                             ray.direction = grabbable.transform.position - m_gripTransform.position;
                             ray.origin = m_gripTransform.position;
                             RaycastHit obstructionHitInfo;
-                            Debug.DrawRay(ray.origin, ray.direction, Color.red, 0.1f);
+
 
                             if (Physics.Raycast(ray, out obstructionHitInfo, m_maxGrabDistance, 1 << m_obstructionLayer))
                             {

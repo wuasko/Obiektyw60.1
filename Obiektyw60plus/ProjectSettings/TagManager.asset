@@ -7,6 +7,9 @@ TagManager:
   - Lang
   - Wall
   - Button
+  - TakeMedicine1Target
+  - FindWandTarget
+  - MoveBedTarget
   layers:
   - Default
   - TransparentFX

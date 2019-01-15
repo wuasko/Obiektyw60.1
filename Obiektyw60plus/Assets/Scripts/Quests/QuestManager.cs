@@ -18,4 +18,16 @@ public class QuestManager : MonoBehaviour
     {
 		
 	}
+
+    public void SetEndOfQuestByName(string targetQuestName)
+    {
+        foreach (Quest q in quests)
+        {
+            if (q.targetTagName == targetQuestName)
+            {
+                q.completed = true;
+                break;
+            }               
+        }
+    }
 }

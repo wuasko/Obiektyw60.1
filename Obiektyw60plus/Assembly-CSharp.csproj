@@ -373,6 +373,7 @@
     <Compile Include="Assets\Scripts\Movement\WheelchairMovement.cs" />
     <Compile Include="Assets\Scripts\Quests\Quest.cs" />
     <Compile Include="Assets\Scripts\Quests\QuestManager.cs" />
+    <Compile Include="Assets\Scripts\Quests\SubjectQuestDetect.cs" />
     <Compile Include="Assets\Scripts\Spells\CastSpells.cs" />
     <Compile Include="Assets\Scripts\Spells\Spell.cs" />
     <Compile Include="Assets\Scripts\Spells\SpellManager.cs" />
@@ -380,6 +381,7 @@
     <Compile Include="Assets\Scripts\UI\ButtonSound.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenu.cs" />
     <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\StoryMenu.cs" />
     <Compile Include="Assets\Scripts\Wands\ArchitectModeWands.cs" />
     <Compile Include="Assets\Scripts\Wands\CastingToObject.cs" />
     <Compile Include="Assets\Scripts\Wands\CheckHandCollision.cs" />

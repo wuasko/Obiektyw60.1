@@ -30,7 +30,6 @@ public class CastingToObject : MonoBehaviour {
 
         if (IsCasting)
         {
-            Debug.DrawRay(transform.position, transform.forward * 100f, Color.blue);
             if (Physics.Raycast(transform.position, transform.forward, out theObject))
             {
 

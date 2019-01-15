@@ -217,7 +217,8 @@ public class ArchitectMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //architectCanvas.transform.position = eyesCamera.transform.position + eyesCamera.transform.forward * 1;
+        //
+        //tectCanvas.transform.position = eyesCamera.transform.position + eyesCamera.transform.forward * 1;
         //architectCanvas.transform.rotation = new Quaternion(0.0f, eyesCamera.transform.rotation.y, 0.0f, eyesCamera.transform.rotation.w);
         //architectCanvas.transform.rotation = new Quaternion(0.0f, eyesCamera.transform.rotation.y, 0.0f, eyesCamera.transform.rotation.w);
     }

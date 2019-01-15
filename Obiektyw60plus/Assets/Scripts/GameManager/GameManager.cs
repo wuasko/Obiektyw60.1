@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour {
     public void CheckIfInteractible()
     {
         Debug.Log("Checking if interactible");
-        Debug.DrawRay(player.position, player.forward);
+
         Ray ray = new Ray(player.position, player.forward);
 
         if (Physics.Raycast(ray, out hit_Info, 100f))
