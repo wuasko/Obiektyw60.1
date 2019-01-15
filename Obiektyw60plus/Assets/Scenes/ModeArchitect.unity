@@ -38848,8 +38848,11 @@ GameObject:
   - component: {fileID: 1721827803}
   - component: {fileID: 1721827802}
   - component: {fileID: 1721827801}
+  - component: {fileID: 1721827806}
   - component: {fileID: 1721827800}
   - component: {fileID: 1721827799}
+  - component: {fileID: 1721827808}
+  - component: {fileID: 1721827807}
   m_Layer: 0
   m_Name: CenterEyeAnchor
   m_TagString: MainCamera
@@ -39004,6 +39007,52 @@ AudioListener:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1721827797}
   m_Enabled: 1
+--- !u!114 &1721827806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1721827797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28c84d1d41322814da078737962a3b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  downsample: 1
+  blurSize: 3
+  blurIterations: 2
+  blurType: 0
+  blurShader: {fileID: 4800000, guid: 4b92b67f9d1796c46a81f8eb66659dcb, type: 3}
+--- !u!114 &1721827807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1721827797}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a48c351cda6f8b40859ea5352c11506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cataractShader: {fileID: 4800000, guid: e54b005df46cf3e4ca1bd3c750f1fd39, type: 3}
+  hueShift: 1
+  saturation: 0.6
+  brightness: 1
+--- !u!114 &1721827808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1721827797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88fd1078db840024e8d123069eeaff0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cataractShader: {fileID: 4800000, guid: cbf2beb7c166dd743a363464c29ad4bb, type: 3}
+  brightness: 0.6
+  blurStrength: 0
+  blurWidth: 0
 --- !u!1 &1726581156
 GameObject:
   m_ObjectHideFlags: 0
