@@ -440,7 +440,7 @@ GameObject:
   - component: {fileID: 24290805}
   - component: {fileID: 24290807}
   - component: {fileID: 24290806}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "rurka.g\xF3rna.001"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1424,7 +1424,7 @@ GameObject:
   - component: {fileID: 40379882}
   - component: {fileID: 40379884}
   - component: {fileID: 40379883}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: panel.na.noge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2015,6 +2015,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0022201124, y: 0.002211286, z: 0.0022201124}
   m_Center: {x: -0.0000000054133125, y: 0.0011057261, z: -0.00000000547152}
+--- !u!54 &79900461
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 79900456}
+  serializedVersion: 2
+  m_Mass: 20
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &82824807
 GameObject:
   m_ObjectHideFlags: 0
@@ -3806,7 +3821,7 @@ GameObject:
   - component: {fileID: 161354119}
   - component: {fileID: 161354121}
   - component: {fileID: 161354120}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Cube.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6447,7 +6462,7 @@ GameObject:
   - component: {fileID: 254473461}
   - component: {fileID: 254473463}
   - component: {fileID: 254473462}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "pod\u0142okietnik.poduszka.lewa"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6676,7 +6691,7 @@ GameObject:
   - component: {fileID: 267493984}
   - component: {fileID: 267493986}
   - component: {fileID: 267493985}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "ma\u0142e.k\xF3\u0142ko.001"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8422,7 +8437,7 @@ GameObject:
   - component: {fileID: 330675007}
   - component: {fileID: 330675009}
   - component: {fileID: 330675008}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "pod\u0142okietnik.lewy.001"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8498,7 +8513,7 @@ GameObject:
   - component: {fileID: 339069176}
   - component: {fileID: 339069178}
   - component: {fileID: 339069177}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "Ma\u0142e.k\xF3\u0142ko.os\u0142onka"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9405,7 +9420,7 @@ GameObject:
   - component: {fileID: 380748764}
   - component: {fileID: 380748766}
   - component: {fileID: 380748765}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Plane.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10326,7 +10341,7 @@ GameObject:
   - component: {fileID: 468708255}
   - component: {fileID: 468708257}
   - component: {fileID: 468708256}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "ca\u0142o\u015B\u0107.prawa"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10729,7 +10744,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 489287704}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Empty.szprycha001.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10987,7 +11002,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 514945087}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Empty.szprycha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11397,7 +11412,7 @@ GameObject:
   - component: {fileID: 524835580}
   - component: {fileID: 524835582}
   - component: {fileID: 524835581}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Szprycha.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12180,7 +12195,7 @@ GameObject:
   - component: {fileID: 575502639}
   - component: {fileID: 575502641}
   - component: {fileID: 575502640}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "rurka.prz\xF3d.001"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12589,7 +12604,7 @@ GameObject:
   - component: {fileID: 586342761}
   - component: {fileID: 586342763}
   - component: {fileID: 586342762}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "Du\u017Ce.ko\u0142o.obr\u0119cz.001"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13888,7 +13903,7 @@ GameObject:
   - component: {fileID: 658145490}
   - component: {fileID: 658145492}
   - component: {fileID: 658145491}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "rurka.g\xF3rna"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15093,7 +15108,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 707563175}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Meshes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15425,7 +15440,7 @@ GameObject:
   - component: {fileID: 717407897}
   - component: {fileID: 717407899}
   - component: {fileID: 717407898}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Szprycha.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15885,7 +15900,7 @@ GameObject:
   - component: {fileID: 737707572}
   - component: {fileID: 737707574}
   - component: {fileID: 737707573}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "pod\u0142okietnik.lewy"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16575,7 +16590,7 @@ GameObject:
   - component: {fileID: 769816649}
   - component: {fileID: 769816651}
   - component: {fileID: 769816650}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "Du\u017Ce.ko\u0142o.obr\u0119cz.przyleg\u0142a"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16927,7 +16942,7 @@ GameObject:
   - component: {fileID: 782479403}
   - component: {fileID: 782479405}
   - component: {fileID: 782479404}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "uchwyt.ty\u0142"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17002,7 +17017,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4019780264859172, guid: 066d60dcd85e32e41abfeaa37d6ef34b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -9.195
+      value: -9.11
       objectReference: {fileID: 0}
     - target: {fileID: 4019780264859172, guid: 066d60dcd85e32e41abfeaa37d6ef34b, type: 2}
       propertyPath: m_LocalPosition.y
@@ -17049,6 +17064,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9ef25b59c9bfc7042a604f37fa1f05fc, type: 2}
+    - target: {fileID: 1846152864127896, guid: 066d60dcd85e32e41abfeaa37d6ef34b, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 199567112193685588, guid: 066d60dcd85e32e41abfeaa37d6ef34b, type: 2}
     - {fileID: 198563430991830062, guid: 066d60dcd85e32e41abfeaa37d6ef34b, type: 2}
@@ -17870,7 +17889,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 825793133}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Wheelchair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18058,7 +18077,7 @@ GameObject:
   - component: {fileID: 833670260}
   - component: {fileID: 833670262}
   - component: {fileID: 833670261}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18788,7 +18807,7 @@ GameObject:
   - component: {fileID: 852464243}
   - component: {fileID: 852464245}
   - component: {fileID: 852464244}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: panel.na.noge.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19881,7 +19900,7 @@ GameObject:
   - component: {fileID: 892732823}
   - component: {fileID: 892732825}
   - component: {fileID: 892732824}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "ma\u0142e.k\xF3\u0142ko"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24102,7 +24121,7 @@ GameObject:
   - component: {fileID: 1055724288}
   - component: {fileID: 1055724290}
   - component: {fileID: 1055724289}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Cube.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24811,7 +24830,7 @@ GameObject:
   - component: {fileID: 1076189662}
   - component: {fileID: 1076189664}
   - component: {fileID: 1076189663}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "Du\u017Ce.ko\u0142o.lewe"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25130,7 +25149,7 @@ GameObject:
   - component: {fileID: 1087429499}
   - component: {fileID: 1087429501}
   - component: {fileID: 1087429500}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "uchwyt.ty\u0142.001"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25806,7 +25825,7 @@ GameObject:
   - component: {fileID: 1097072082}
   - component: {fileID: 1097072084}
   - component: {fileID: 1097072083}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "ma\u0142e.k\xF3\u0142ko.\u015Brodek.001"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26037,7 +26056,7 @@ GameObject:
   - component: {fileID: 1106891873}
   - component: {fileID: 1106891875}
   - component: {fileID: 1106891874}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "pod\u0142okietnik.poduszka.prawa"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26863,7 +26882,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1132071703}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Empty.szprycha.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26939,6 +26958,7 @@ GameObject:
   - component: {fileID: 1136207692}
   - component: {fileID: 1136207695}
   - component: {fileID: 1136207694}
+  - component: {fileID: 1136207693}
   m_Layer: 0
   m_Name: sufit
   m_TagString: Untagged
@@ -26961,6 +26981,18 @@ Transform:
   m_Father: {fileID: 2013407684}
   m_RootOrder: 70
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1136207693
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1136207691}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.11252623, y: 0.0010000035, z: 0.08010771}
+  m_Center: {x: -0.00039958954, y: 0.0005, z: 0.00090714544}
 --- !u!23 &1136207694
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27643,7 +27675,7 @@ GameObject:
   - component: {fileID: 1182704604}
   - component: {fileID: 1182704606}
   - component: {fileID: 1182704605}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Szprycha.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28312,6 +28344,21 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!54 &1207528658
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1207528652}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &1207528662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28591,7 +28638,7 @@ GameObject:
   - component: {fileID: 1227201112}
   - component: {fileID: 1227201114}
   - component: {fileID: 1227201113}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "rurka.prz\xF3d"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29963,7 +30010,7 @@ GameObject:
   - component: {fileID: 1288904293}
   - component: {fileID: 1288904295}
   - component: {fileID: 1288904294}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "siedzenie.d\xF3\u0142.001"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31873,7 +31920,7 @@ GameObject:
   - component: {fileID: 1363923472}
   - component: {fileID: 1363923474}
   - component: {fileID: 1363923473}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Cube.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33125,7 +33172,7 @@ GameObject:
   - component: {fileID: 1426125764}
   - component: {fileID: 1426125766}
   - component: {fileID: 1426125765}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "Du\u017Ce.ko\u0142o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33201,7 +33248,7 @@ GameObject:
   - component: {fileID: 1426500481}
   - component: {fileID: 1426500483}
   - component: {fileID: 1426500482}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "rurka.do.ma\u0142ego.001"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33441,7 +33488,7 @@ GameObject:
   - component: {fileID: 1432838849}
   - component: {fileID: 1432838851}
   - component: {fileID: 1432838850}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "siedzenie.g\xF3ra"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33816,7 +33863,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4019780264859172, guid: 066d60dcd85e32e41abfeaa37d6ef34b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5.252
+      value: -5.2
       objectReference: {fileID: 0}
     - target: {fileID: 4019780264859172, guid: 066d60dcd85e32e41abfeaa37d6ef34b, type: 2}
       propertyPath: m_LocalPosition.y
@@ -33824,7 +33871,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4019780264859172, guid: 066d60dcd85e32e41abfeaa37d6ef34b, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -1.641
+      value: -1.78
       objectReference: {fileID: 0}
     - target: {fileID: 4019780264859172, guid: 066d60dcd85e32e41abfeaa37d6ef34b, type: 2}
       propertyPath: m_LocalRotation.x
@@ -33863,9 +33910,14 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d5526050ca2e6c341bfa2d267b96ba73, type: 2}
+    - target: {fileID: 1846152864127896, guid: 066d60dcd85e32e41abfeaa37d6ef34b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 199567112193685588, guid: 066d60dcd85e32e41abfeaa37d6ef34b, type: 2}
     - {fileID: 198563430991830062, guid: 066d60dcd85e32e41abfeaa37d6ef34b, type: 2}
+    - {fileID: 54620370959193320, guid: 066d60dcd85e32e41abfeaa37d6ef34b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 066d60dcd85e32e41abfeaa37d6ef34b, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1475188843
@@ -36820,8 +36872,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.01, y: 0.0077182213, z: 0.01}
-  m_Center: {x: 0, y: 0.003889096, z: 4.813805e-18}
+  m_Size: {x: 0.01, y: 0.007547535, z: 0.01}
+  m_Center: {x: 0, y: 0.0038037524, z: 5.759069e-18}
 --- !u!23 &1611714332
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37647,7 +37699,7 @@ GameObject:
   - component: {fileID: 1664652230}
   - component: {fileID: 1664652232}
   - component: {fileID: 1664652231}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "Du\u017Ce.ko\u0142o.lewe.001"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38445,7 +38497,7 @@ GameObject:
   - component: {fileID: 1677751776}
   - component: {fileID: 1677751778}
   - component: {fileID: 1677751777}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: rurka.tyl.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38521,7 +38573,7 @@ GameObject:
   - component: {fileID: 1683043911}
   - component: {fileID: 1683043913}
   - component: {fileID: 1683043912}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "Du\u017Ce.ko\u0142o.obr\u0119cz"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39090,7 +39142,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 791
+    m_Bits: 1815
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -39244,7 +39296,7 @@ GameObject:
   - component: {fileID: 1727441575}
   - component: {fileID: 1727441577}
   - component: {fileID: 1727441576}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "siedzenie.d\xF3\u0142"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39742,7 +39794,7 @@ GameObject:
   - component: {fileID: 1744494802}
   - component: {fileID: 1744494804}
   - component: {fileID: 1744494803}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: siedzenie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41981,7 +42033,7 @@ GameObject:
   - component: {fileID: 1867206302}
   - component: {fileID: 1867206304}
   - component: {fileID: 1867206303}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "Ma\u0142e.k\xF3\u0142ko.os\u0142onka.001"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42203,7 +42255,7 @@ GameObject:
   - component: {fileID: 1879639146}
   - component: {fileID: 1879639148}
   - component: {fileID: 1879639147}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "Du\u017Ce.ko\u0142o.001"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44039,7 +44091,7 @@ GameObject:
   - component: {fileID: 1954217176}
   - component: {fileID: 1954217178}
   - component: {fileID: 1954217177}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "siedzenie.g\xF3ra.001"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44204,7 +44256,7 @@ GameObject:
   - component: {fileID: 1959443723}
   - component: {fileID: 1959443725}
   - component: {fileID: 1959443724}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "rurka.do.ma\u0142ego"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45008,7 +45060,7 @@ GameObject:
   - component: {fileID: 1991387573}
   - component: {fileID: 1991387575}
   - component: {fileID: 1991387574}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "ma\u0142e.k\xF3\u0142ko.\u015Brodek"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45291,7 +45343,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2000544123}
   serializedVersion: 2
-  m_Mass: 80
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -46491,7 +46543,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2032736551}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Empty.szprycha001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47345,7 +47397,7 @@ GameObject:
   - component: {fileID: 2063730957}
   - component: {fileID: 2063730959}
   - component: {fileID: 2063730958}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: siedzenie.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47879,7 +47931,7 @@ GameObject:
   - component: {fileID: 2088767780}
   - component: {fileID: 2088767782}
   - component: {fileID: 2088767781}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Full body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48002,7 +48054,7 @@ GameObject:
   - component: {fileID: 2092349844}
   - component: {fileID: 2092349846}
   - component: {fileID: 2092349845}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Szprycha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48589,7 +48641,7 @@ GameObject:
   - component: {fileID: 2118189753}
   - component: {fileID: 2118189755}
   - component: {fileID: 2118189754}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: rurka.tyl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48668,7 +48720,7 @@ GameObject:
   - component: {fileID: 2120923651}
   - component: {fileID: 2120923649}
   - component: {fileID: 2120923650}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48716,8 +48768,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.79338735, y: 0.7645104, z: 1}
-  m_Center: {x: -0.020661294, y: 0.3822552, z: -7.15701e-17}
+  m_Size: {x: 0.714511, y: 0.69879043, z: 0.8052914}
+  m_Center: {x: -0.020793945, y: 0.32281107, z: -0.002580285}
 --- !u!54 &2120923652
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -48726,7 +48778,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2120923648}
   serializedVersion: 2
-  m_Mass: 95
+  m_Mass: 100000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -48821,7 +48873,7 @@ GameObject:
   - component: {fileID: 2126207402}
   - component: {fileID: 2126207404}
   - component: {fileID: 2126207403}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "ca\u0142o\u015B\u0107.lewa"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49126,7 +49178,7 @@ GameObject:
   - component: {fileID: 2142299112}
   - component: {fileID: 2142299114}
   - component: {fileID: 2142299113}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: "Du\u017Ce.ko\u0142o.obr\u0119cz.przyleg\u0142a.001"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
