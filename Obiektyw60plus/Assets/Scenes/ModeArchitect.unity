@@ -38928,7 +38928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glaucomaShader: {fileID: 4800000, guid: 607bf443e9ce6954ba02c45a3c1f5fb4, type: 3}
-  radius: 0.68
+  radius: 0.465
   soft: 0.5
   circleColor: 0.1
 --- !u!114 &1721827802
@@ -39013,7 +39013,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1721827797}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28c84d1d41322814da078737962a3b72, type: 3}
   m_Name: 
@@ -39044,7 +39044,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1721827797}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 88fd1078db840024e8d123069eeaff0a, type: 3}
   m_Name: 

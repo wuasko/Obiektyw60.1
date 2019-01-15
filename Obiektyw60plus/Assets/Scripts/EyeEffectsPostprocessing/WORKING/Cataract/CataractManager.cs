@@ -47,9 +47,11 @@ public class CataractManager : MonoBehaviour
         cataractEffect = (CataractEffect)mainCamera.GetComponent(typeof(CataractEffect));
         blurOptimized = (BlurOptimized)mainCamera.GetComponent(typeof(BlurOptimized));
 
-        rgb2hsl.enabled = bEnable;
-        cataractEffect.enabled = bEnable;
         blurOptimized.enabled = bEnable;
+        cataractEffect.enabled = bEnable;
+        rgb2hsl.enabled = bEnable;
+        
+       
 
         /* GetComponent<RGBtoHSL>().enabled = bEnable;
         GetComponent<BlurOptimized>().enabled = bEnable;
