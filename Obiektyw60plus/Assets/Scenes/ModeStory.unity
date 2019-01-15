@@ -7257,7 +7257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa181a333b592242885922a3c58351a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Move: 0
+  Move: 1
 --- !u!114 &283176836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8798,7 +8798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa181a333b592242885922a3c58351a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Move: 0
+  Move: 1
 --- !u!54 &357138686
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24301,7 +24301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa181a333b592242885922a3c58351a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Move: 0
+  Move: 1
 --- !u!54 &1088243338
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34219,6 +34219,51 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1547643420}
   m_Mesh: {fileID: 4300246, guid: 18a794da35528374f9143bce4f5d7a09, type: 3}
+--- !u!1 &1549924352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1549924353}
+  - component: {fileID: 1549924354}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1549924353
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1549924352}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2012281028}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1549924354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1549924352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 936c48e439557994fa2f047a7b307f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCollider: {fileID: 0}
+  subjectCollider: {fileID: 0}
+  highlightedGameObjects: []
+  targetTagName: 
+  completed: 0
 --- !u!1 &1549962842
 GameObject:
   m_ObjectHideFlags: 0
@@ -43680,6 +43725,7 @@ Transform:
   - {fileID: 828082409}
   - {fileID: 1717909970}
   - {fileID: 1002989383}
+  - {fileID: 1549924353}
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

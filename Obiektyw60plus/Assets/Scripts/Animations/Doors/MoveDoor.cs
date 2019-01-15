@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveDoor : MonoBehaviour {
 
-    public bool Move = false;
+    public bool Move = true;
 
     Animation animation;
     string AnimName;
@@ -14,13 +14,16 @@ public class MoveDoor : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+
         if (!animation) Debug.Log("no animation component");
         animation = GetComponent<Animation>();
         foreach (AnimationState state in animation) AnimName = state.name;
+        
     }
 	
 	// Update is called once per frame
 	void Update () {
+
         MovementInput = Input.GetAxis("Oculus_CrossPlatform_SecondaryIndexTrigger");
 
         //if (Move)
