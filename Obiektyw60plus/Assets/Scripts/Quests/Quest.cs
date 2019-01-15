@@ -5,9 +5,9 @@ using UnityEngine;
 public class Quest : MonoBehaviour
 {
     //public bool enter = false;
-    public GameObject targetCollider;
+    //public GameObject targetCollider;
     //public bool pickUp = false;
-    public GameObject subjectCollider;
+    //public GameObject subjectCollider;
     public GameObject[] highlightedGameObjects;
     public string targetTagName;
     public bool completed = false;
@@ -21,7 +21,7 @@ public class Quest : MonoBehaviour
 
     private void EndQuest()
     {
-        completed = true;
+        //completed = true;
     }
 
 

@@ -10,6 +10,12 @@ TagManager:
   - TakeMedicine1Target
   - FindWandTarget
   - MoveBedTarget
+  - TakeMedicine2Target
+  - EatTarget
+  - TakeMedicine3Target
+  - BrushTarget
+  - EscapeRoomTarget
+  - FindWalletTarget
   layers:
   - Default
   - TransparentFX

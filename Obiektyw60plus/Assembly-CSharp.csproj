@@ -371,6 +371,8 @@
     <Compile Include="Assets\Scripts\Lang\LocalizedImage.cs" />
     <Compile Include="Assets\Scripts\Lang\LocalizedText.cs" />
     <Compile Include="Assets\Scripts\Movement\WheelchairMovement.cs" />
+    <Compile Include="Assets\Scripts\Quests\Brush.cs" />
+    <Compile Include="Assets\Scripts\Quests\Eat.cs" />
     <Compile Include="Assets\Scripts\Quests\Quest.cs" />
     <Compile Include="Assets\Scripts\Quests\QuestManager.cs" />
     <Compile Include="Assets\Scripts\Quests\SubjectQuestDetect.cs" />

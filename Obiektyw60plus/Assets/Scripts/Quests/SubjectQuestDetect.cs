@@ -37,9 +37,8 @@ public class SubjectQuestDetect : MonoBehaviour {
                 PassEndQuestToQuestManager(((GameObject)this.gameObject).tag);
             }
         }
-            
-    }
 
+    }
 
     private void PassEndQuestToQuestManager(string targetQuestName)
     {

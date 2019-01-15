@@ -23,9 +23,10 @@ public class QuestManager : MonoBehaviour
     {
         foreach (Quest q in quests)
         {
-            if (q.targetTagName == targetQuestName)
+            if ((q.targetTagName == targetQuestName) && (!q.completed))
             {
                 q.completed = true;
+                currentQuest++;
                 break;
             }               
         }
