@@ -73,7 +73,7 @@ public class WandOfMoveFurniture : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MovementInput = Input.GetAxis("Oculus_CrossPlatform_SecondaryIndexTrigger");
+        MovementInput = Input.GetAxis("Oculus_CrossPlatform_SecondaryIndexTrigger") + Input.GetAxis("Oculus_CrossPlatform_PrimaryIndexTrigger");
 
         //Input test
         //Debug.Log("Lindex " +Input.GetAxis("Oculus_CrossPlatform_PrimaryIndexTrigger")); //left index

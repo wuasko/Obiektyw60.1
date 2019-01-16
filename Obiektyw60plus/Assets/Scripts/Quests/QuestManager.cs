@@ -10,8 +10,12 @@ public class QuestManager : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
-		
-	}
+        int i = 0;
+        foreach (Quest q in quests)
+        {
+            q.number = i++;
+        }
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -23,7 +27,7 @@ public class QuestManager : MonoBehaviour
     {
         foreach (Quest q in quests)
         {
-            if ((q.targetTagName == targetQuestName) && (!q.completed))
+            if ((q.targetTagName == targetQuestName) && (currentQuest == q.number) && (!q.completed))
             {
                 q.completed = true;
                 currentQuest++;

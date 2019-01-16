@@ -8,6 +8,8 @@ public class Quest : MonoBehaviour
     //public GameObject targetCollider;
     //public bool pickUp = false;
     //public GameObject subjectCollider;
+
+    public int number;
     public GameObject[] highlightedGameObjects;
     public string targetTagName;
     public bool completed = false;
