@@ -117,28 +117,28 @@ public class HighlightCollided : MonoBehaviour {
 
             if (flashingIn)
             {
-                if (redCol <= 30)
+                if (greenCol <= 30)
                 {
                     flashingIn = false;
                 }
                 else
                 {
-                    redCol -= 10;
-                    greenCol -= 5;
+                    redCol -= 2;
+                    greenCol -= 10;
                 }
 
             }
 
             if (!flashingIn)
             {
-                if (redCol >= 250)
+                if (greenCol >= 250)
                 {
                     flashingIn = true;
                 }
                 else
                 {
-                    redCol += 10;
-                    greenCol += 5;
+                    redCol += 2;
+                    greenCol += 10;
 
                 }
             }

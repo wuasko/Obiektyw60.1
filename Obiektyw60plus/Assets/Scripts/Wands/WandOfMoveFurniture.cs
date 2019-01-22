@@ -23,6 +23,7 @@ public class WandOfMoveFurniture : MonoBehaviour
     public bool move = false;
     public Vector3 PointToGo;
     public string CurtainObjectName = "zaslony";
+    public string MovableLayerName = "Movable";
 
     DistanceGrabbable distanceGrabbable;
     CastingToObject castingToObject;
@@ -169,10 +170,13 @@ public class WandOfMoveFurniture : MonoBehaviour
 
     private void FindIntersectionPoint()
     {
+        int layerMask = 1 << LayerMask.NameToLayer(MovableLayerName); 
+        layerMask = ~layerMask; //cast rays against every layer, beside MovableLayerName
+
         RaycastHit objectHit;
 
         // Shoot raycast
-        if (Physics.Raycast(transform.position, transform.forward, out objectHit, 50))
+        if(Physics.Raycast(transform.position, transform.forward, out objectHit, 50, layerMask))
         {
             PointToGo = objectHit.point;
         }
