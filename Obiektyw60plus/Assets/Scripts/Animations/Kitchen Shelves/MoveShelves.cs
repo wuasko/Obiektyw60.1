@@ -3,12 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//TODO make it work for the two nearest shelves ( now they move 2 steps instead of one ) Maybe add some time for colliders to turn on, so it won't break
-
+/// <summary>
+/// Moves the selected shelf to position of shelf that is closest to the player
+/// Shelves move left or right, depending on which way is closer
+/// 
+/// WandOfMoveFurniture controls this script
+/// </summary>
 public class MoveShelves : MonoBehaviour {
 
-    public int ShelvesNum = 14;
-    public float ShelfSpeed = 4f;
+    public int ShelvesNum = 12;
+    public float ShelfSpeed = 2f;
     public bool IsShelfSelected = false;
 
     private enum MoveDirection { left, right, up, down};

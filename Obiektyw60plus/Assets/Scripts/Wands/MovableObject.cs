@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-//Attach the script to the object, that you want to move
-//Requires also HighlightSelected script attached.
+/// <summary>
+/// Moves the object to the point, determined by WandOfMoveFurniture script
+/// Requires also HighlightSelected script attached.
+/// </summary>
 public class MovableObject : MonoBehaviour {
 
     public GameObject selectedObject;
@@ -38,12 +39,6 @@ public class MovableObject : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-
-        //TODO remove this later
-        //if (Input.GetKeyDown("p"))
-        //{
-        //  wandOfMove.move = !wandOfMove.move;
-        //}
 
 
         if (wandOfMove.move) //must hold right index finger to start moving coroutine
@@ -80,9 +75,7 @@ public class MovableObject : MonoBehaviour {
             Vector3 DirectionToGo = wandOfMove.PointToGo - transform.position;
             rigidbody.MovePosition(transform.position + DirectionToGo*Time.deltaTime);
 
-            yield return new WaitForSeconds(0.05f);
-
-            
+            yield return new WaitForSeconds(0.05f); 
         }
     }
 }

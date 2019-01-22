@@ -35,11 +35,7 @@ public class LightSwitch : MonoBehaviour {
         //TODO find all colliders from HandRight, save them in list. Check for these colliders in OnCollisionEnter
     }
 
-    // Update is called once per frame
-    void Update()
-    {
 
-    }
     void OnTriggerEnter(Collider col)
     {
         //TODO try rotating parent object here, and when trigger enters again it will wait until the other part of switch rotates

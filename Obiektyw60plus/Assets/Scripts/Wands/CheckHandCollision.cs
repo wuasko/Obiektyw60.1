@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using OculusSampleFramework;
-
+/// <summary>
+/// Checking collision with hand colliders
+/// Activates the object's HighlightCollided script
+/// </summary>
 public class CheckHandCollision : MonoBehaviour {
 
 
@@ -20,7 +23,7 @@ public class CheckHandCollision : MonoBehaviour {
         HandLeft = GameObject.Find("DistanceHandLeft");
         if (!HandLeft) Debug.Log("Can't find DistanceHandLeft");
         highlightCollided = GetComponent<HighlightCollided>();
-        if (!highlightCollided) Debug.Log("Script HighlightSelected not attached");
+        if (!highlightCollided) Debug.Log("Script HighlightCollided not attached");
         distanceGrabbable = GetComponent<DistanceGrabbable>();
         if (!distanceGrabbable) Debug.Log("Script DistanceGrabbable not attached");
 

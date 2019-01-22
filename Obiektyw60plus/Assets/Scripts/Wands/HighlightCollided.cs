@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//Does the same as HighlightSelected, but when collision with objects occurs
+//Highlight objects when collision occurs
 //CheckHandCollision steers this script
 public class HighlightCollided : MonoBehaviour {
 

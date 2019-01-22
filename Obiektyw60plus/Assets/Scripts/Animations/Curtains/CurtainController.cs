@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Plays the curtain animation forward or backward
+/// 
+/// WandOfMoveFurniture controls this script
+/// </summary>
 public class CurtainController : MonoBehaviour {
 
     #region Singleton

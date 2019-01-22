@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Determines the selectedObject using raycast from wand position, forward
+/// Activates the HighlightSelected script
+/// </summary>
 public class CastingToObject : MonoBehaviour {
 
     public bool IsCasting = false;

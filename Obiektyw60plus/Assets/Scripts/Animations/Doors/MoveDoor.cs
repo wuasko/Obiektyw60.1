@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Plays the door animation forward or backward
+/// 
+/// WandOfMoveFurniture controls this script
+/// </summary>
 public class MoveDoor : MonoBehaviour {
 
     public bool Move = true;
@@ -16,7 +21,7 @@ public class MoveDoor : MonoBehaviour {
     void Start () {
 
         if (!animation) Debug.Log("no animation component");
-        animation = GetComponent<Animation>();
+        animation = GetComponent<Animation>(); //Make sure the animation is set to legacy
         foreach (AnimationState state in animation) AnimName = state.name;
         
     }
@@ -24,33 +29,29 @@ public class MoveDoor : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        MovementInput = Input.GetAxis("Oculus_CrossPlatform_SecondaryIndexTrigger");
-
-        //if (Move)
-        //{
-            if (IsPlayingForward && !AnimationStarted)
-            {
-                animation[AnimName].time = 0;
-                animation[AnimName].speed = 1;
-                AnimationStarted = true;
-            }
-            else if (!IsPlayingForward && AnimationStarted)
-            {
-                animation[AnimName].time = animation[AnimName].length;
-                animation[AnimName].speed = -1;
-                AnimationStarted = false;
-            }
+        if (IsPlayingForward && !AnimationStarted)
+        {
+            animation[AnimName].time = 0;
+            animation[AnimName].speed = 1;
+            AnimationStarted = true;
+        }
+        else if (!IsPlayingForward && AnimationStarted)
+        {
+            animation[AnimName].time = animation[AnimName].length;
+            animation[AnimName].speed = -1;
+            AnimationStarted = false;
+        }
         
-            if (!animation.isPlaying)
+        if (!animation.isPlaying)
+        {
+            if (Move)
             {
-                if (Move)
-                {
                     
-                    IsPlayingForward = !IsPlayingForward;
-                    animation.Play(AnimName);
-                }
+                IsPlayingForward = !IsPlayingForward;
+                animation.Play(AnimName);
             }
+        }
         if (Move) Move = false;
-        //}
+
 	}
 }

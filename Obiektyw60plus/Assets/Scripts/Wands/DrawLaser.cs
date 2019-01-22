@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Draws line from the tip of the wand, when the wand is used
+/// Uses LineRenderer component to draw the line
+/// 
+/// WandOfMoveFurniture controls this script
+/// </summary>
 public class DrawLaser : MonoBehaviour {
 
 
