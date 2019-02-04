@@ -7,26 +7,62 @@ using UnityStandardAssets.ImageEffects;
 using Assets.Scripts.EyeEffectsPostprocessing;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
-
+/// <summary>
+/// Class <c>StoryMenu</c>, responsible for user interface in story mode.
+/// </summary>
 public class StoryMenu : MonoBehaviour
 {
-   
+   /// <summary>
+   /// Player game object.
+   /// </summary>
     public GameObject player;
+    /// <summary>
+    /// Oculus player controller game object.
+    /// </summary>
     public GameObject OVRPlayerController;
 
+    /// <summary>
+    /// Camera to which visual impairment scripts are attached.
+    /// </summary>
     public GameObject eyesCamera;
-    public GameObject architectCanvas; 
-    
+
+    /// <summary>
+    /// <c>optionsPanel</c> appearing when options are toggled.
+    /// </summary>    
     public GameObject optionsPanel;
+    /// <summary>
+    /// <c>confirmPanel</c> hold panel that appears when player quits game and is asked for confirmation.
+    /// </summary>
     public GameObject confirmPanel;
 
+    /// <summary>
+    /// Slider controlling <c>MusicMixer</c>
+    /// </summary>
     public Slider volumeSlider;
+    /// <summary>
+    /// Toggling slider managing <c>YellowEyeEffect</c> script.
+    /// </summary>
     public Slider sliderYellow;
+    /// <summary>
+    /// Toggling slider managing <c>DepthOfField</c> script.
+    /// </summary>
     public Slider sliderDepth;
+    /// <summary>
+    /// Toggling slider managing <c>CataractManager</c> script.
+    /// </summary>
     public Slider sliderCataract;
+    /// <summary>
+    /// Toggling slider managing <c>GlaucomaEffect</c> script.
+    /// </summary>
     public Slider sliderGlaucoma;
 
+    /// <summary>
+    /// Script responsible for glaucoma effect.
+    /// </summary>
     private GlaucomaEffecet glaucomaScript;
+    /// <summary>
+    /// Script responsible for depth of field effect.
+    /// </summary>
     private DepthOfField depthScript;
     private YellowEyeEffect yellowScript;
     private CataractManager cataractScript;
@@ -37,7 +73,9 @@ public class StoryMenu : MonoBehaviour
     private bool pause;
 
 
-    // Use this for initialization
+    /// <summary>
+    /// Class <c>StoryMenu</c> initialization
+    /// </summary>
     void Start()
     {
         pause = false;
@@ -73,11 +111,6 @@ public class StoryMenu : MonoBehaviour
 
     }
 
-    //public void SetLevel(float sliderValue)
-    //{
-    //    PlayerPrefs.SetFloat("MusicVolume", sliderValue);
-    //    audio.SetFloat("MusicVolume", Mathf.Log10(sliderValue) * 20);
-    //}
 
     public void yellowToggle()
     {
