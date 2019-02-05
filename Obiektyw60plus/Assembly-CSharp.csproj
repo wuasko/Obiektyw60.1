@@ -377,9 +377,7 @@
     <Compile Include="Assets\Scripts\Spells\Spell.cs" />
     <Compile Include="Assets\Scripts\Spells\SpellManager.cs" />
     <Compile Include="Assets\Scripts\UI\ArchitectMenu.cs" />
-    <Compile Include="Assets\Scripts\UI\ButtonSound.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenu.cs" />
-    <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\UI\StoryMenu.cs" />
     <Compile Include="Assets\Scripts\Wands\CastingToObject.cs" />
     <Compile Include="Assets\Scripts\Wands\CheckHandCollision.cs" />

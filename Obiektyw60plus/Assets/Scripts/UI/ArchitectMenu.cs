@@ -10,36 +10,108 @@ using UnityEngine.SceneManagement;
 
 public class ArchitectMenu : MonoBehaviour
 {
-
+    /// <summary>
+    /// Toggle button responsible for wheelchair visibility.
+    /// </summary>
     public Toggle wheelchairToggle;
+    /// <summary>
+    /// Wheelchair mesh that is toggle active by <c>wheelchairToggle</c>.
+    /// </summary>
     public GameObject wheelchairMesh;
+    /// <summary>
+    /// Player game object.
+    /// </summary>
     public GameObject player;
+    /// <summary>
+    /// Oculus player controller game object.
+    /// </summary>
     public GameObject OVRPlayerController;
 
+    /// <summary>
+    /// Camera to which visual impairment scripts are attached.
+    /// </summary>
     public GameObject eyesCamera;
+    /// <summary>
+    /// Canvas on which the architect user interface is placed.
+    /// </summary>  
     public GameObject architectCanvas;
-
+    /// <summary>
+    /// <c>architectPanel</c> is constantly visible in the designer mode, bearing tools for architect to use.
+    /// </summary>
     public GameObject architectPanel;
+    /// <summary>
+    /// <c>optionsPanel</c> appearing when options are toggled.
+    /// </summary>    
     public GameObject optionsPanel;
+    /// <summary>
+    /// <c>confirmPanel</c> hold panel that appears when player quits game and is asked for confirmation.
+    /// </summary>
     public GameObject confirmPanel;
 
+    /// <summary>
+    /// Slider controlling <c>MusicMixer</c>
+    /// </summary>
     public Slider volumeSlider;
+    /// <summary>
+    /// Toggling slider managing <c>YellowEyeEffect</c> script.
+    /// </summary>
     public Slider sliderYellow;
+    /// <summary>
+    /// Toggling slider managing <c>DepthOfField</c> script.
+    /// </summary>
     public Slider sliderDepth;
+    /// <summary>
+    /// Toggling slider managing <c>CataractManager</c> script.
+    /// </summary>
     public Slider sliderCataract;
+    /// <summary>
+    /// Toggling slider managing <c>GlaucomaEffect</c> script.
+    /// </summary>
     public Slider sliderGlaucoma;
 
+    /// <summary>
+    /// Script responsible for glaucoma effect.
+    /// </summary>
     private GlaucomaEffecet glaucomaScript;
+    /// <summary>
+    /// Script responsible for depth of field effect.
+    /// </summary>
     private DepthOfField depthScript;
+    /// <summary>
+    /// Script responsible for yellowing of the lense effect.
+    /// </summary>
     private YellowEyeEffect yellowScript;
+    /// <summary>
+    /// Script responsible for cataract effect.
+    /// </summary>
     private CataractManager cataractScript;
 
+    /// <summary>
+    /// Audio Mixer controlling volume levels on the scene.
+    /// </summary>
     public AudioMixer audio;
 
-    private bool yellow, depth, glaucoma, cataract;
+    /// <summary>
+    /// Variable controlling state of yellowing effect and its toggle.
+    /// </summary>
+    private bool yellow;
+    /// <summary>
+    /// Variable controlling state of depth of field effect and its toggle.
+    /// </summary>
+    private bool depth;
+    /// <summary>
+    /// Variable controlling state of glaucoma effect and its toggle.
+    /// </summary>
+    private bool glaucoma;
+    /// <summary>
+    /// Variable controlling state of cataract effect and its toggle.
+    /// </summary>
+    private bool cataract;
 
 
-    // Use this for initialization
+    /// <summary>
+    /// Class <c>ArchitectMenu</c> initialization. Within it initial toggle values are assigned, visual impairment scripts are looked up and slider toggle listeners are added.
+    /// </summary>
     void Start()
     {
         yellow = false;
@@ -77,26 +149,20 @@ public class ArchitectMenu : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Function setting initial <c>MusicVolume</c> value in <c>PlayerPrefs</c>.
+    /// </summary>
+    /// <param name="sliderValue"></param>
     public void SetLevel(float sliderValue)
     {
         PlayerPrefs.SetFloat("MusicVolume", sliderValue);
         audio.SetFloat("MusicVolume", Mathf.Log10(sliderValue) * 20);
     }
 
-    public void yellowToggle()
-    {
-
-        if (yellow)
-        {
-            yellowScript.enabled = false;
-            yellow = false;
-        }
-        else
-        {
-            yellow = true;
-            yellowScript.enabled = true;
-        }
-    }
+    /// <summary>
+    /// Function called by yellow toggle slider.
+    /// </summary>
+    /// <param name="slider"></param>
     public void sliderYellowToggle(Slider slider)
     {
         switch ((int)slider.value)
@@ -113,6 +179,10 @@ public class ArchitectMenu : MonoBehaviour
 
         } 
     }
+    /// <summary>
+    /// Function called by depth toggle slider.
+    /// </summary>
+    /// <param name="slider"></param>
     public void sliderDepthToggle(Slider slider)
     {
         switch ((int)slider.value)
@@ -129,6 +199,10 @@ public class ArchitectMenu : MonoBehaviour
 
         }
     }
+    /// <summary>
+    /// Function called by cataract toggle slider.
+    /// </summary>
+    /// <param name="slider"></param>
     public void sliderCataractToggle(Slider slider)
     {
         switch ((int)slider.value)
@@ -145,6 +219,10 @@ public class ArchitectMenu : MonoBehaviour
                 break;
         }
     }
+    /// <summary>
+    /// Function called by glaucoma toggle slider.
+    /// </summary>
+    /// <param name="slider"></param>
     public void sliderGlaucomaToggle(Slider slider)
     {
         switch ((int)slider.value)
@@ -157,45 +235,6 @@ public class ArchitectMenu : MonoBehaviour
                 glaucoma = true;
                 glaucomaScript.enabled = true;
                 break;
-        }
-    }
-    public void depthToggle()
-    {
-        if (depth)
-        {
-            depth = false;
-            depthScript.enabled = false;
-        }
-        else
-        {
-            depth = true;
-            depthScript.enabled = true;
-        }
-    }
-    public void glaucomaToggle()
-    {
-        if (glaucoma)
-        {
-            glaucoma = false;
-            glaucomaScript.enabled = false;
-        }
-        else
-        {
-            glaucoma = true;
-            glaucomaScript.enabled = true;
-        }
-    }
-    public void cataractToggle()
-    {
-        if (glaucoma)
-        {
-            cataract = false;
-            cataractScript.enabled = false;
-        }
-        else
-        {
-            cataract = true;
-            cataractScript.enabled = true;
         }
     }
 
@@ -214,33 +253,47 @@ public class ArchitectMenu : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        //
-        //tectCanvas.transform.position = eyesCamera.transform.position + eyesCamera.transform.forward * 1;
-        //architectCanvas.transform.rotation = new Quaternion(0.0f, eyesCamera.transform.rotation.y, 0.0f, eyesCamera.transform.rotation.w);
-        //architectCanvas.transform.rotation = new Quaternion(0.0f, eyesCamera.transform.rotation.y, 0.0f, eyesCamera.transform.rotation.w);
-    }
+    /* unimplemented
+    //// Update is called once per frame
+    //void Update()
+    //{
+    //    //tectCanvas.transform.position = eyesCamera.transform.position + eyesCamera.transform.forward * 1;
+    //    //architectCanvas.transform.rotation = new Quaternion(0.0f, eyesCamera.transform.rotation.y, 0.0f, eyesCamera.transform.rotation.w);
+    //    //architectCanvas.transform.rotation = new Quaternion(0.0f, eyesCamera.transform.rotation.y, 0.0f, eyesCamera.transform.rotation.w);
+    //}
+    */
 
+    /// <summary>
+    /// Function toggling on the <c>OptionsPanel</c>.
+    /// </summary>
     public void openSettings()
     {
         optionsPanel.SetActive(true);
         confirmPanel.SetActive(false);
     }
 
+    /// <summary>
+    /// Function toggling on the <c>ConfirmQuitPanel</c>.
+    /// </summary>
     public void openConfirm()
     {
         optionsPanel.SetActive(false);
         confirmPanel.SetActive(true);
     }
 
+    /// <summary>
+    /// Function hiding the <c>OptionsPanel</c> and <c>ConfirmQuitPanel</c>.
+    /// </summary>
     public void resume()
     {
         optionsPanel.SetActive(false);
         confirmPanel.SetActive(false);
     }
 
+    /// <summary>
+    /// Function that loads the <c>sceneName</c> scene.
+    /// </summary>
+    /// <param name="sceneName"></param>
     public void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);

@@ -64,17 +64,44 @@ public class StoryMenu : MonoBehaviour
     /// Script responsible for depth of field effect.
     /// </summary>
     private DepthOfField depthScript;
+    /// <summary>
+    /// Script responsible for yellowing of the lense effect.
+    /// </summary>
     private YellowEyeEffect yellowScript;
+    /// <summary>
+    /// Script responsible for cataract effect.
+    /// </summary>
     private CataractManager cataractScript;
 
+    /// <summary>
+    /// Audio Mixer controlling volume levels on the scene.
+    /// </summary>
     public AudioMixer audio;
 
-    private bool yellow, depth, glaucoma, cataract;
+    /// <summary>
+    /// Variable controlling state of yellowing effect and its toggle.
+    /// </summary>
+    private bool yellow;
+    /// <summary>
+    /// Variable controlling state of depth of field effect and its toggle.
+    /// </summary>
+    private bool depth;
+    /// <summary>
+    /// Variable controlling state of glaucoma effect and its toggle.
+    /// </summary>
+    private bool glaucoma;
+    /// <summary>
+    /// Variable controlling state of cataract effect and its toggle.
+    /// </summary>
+    private bool cataract;
+    /// <summary>
+    /// Variable storing true if game is paused and false if it's not.
+    /// </summary>
     private bool pause;
 
 
     /// <summary>
-    /// Class <c>StoryMenu</c> initialization
+    /// Class <c>StoryMenu</c> initialization. Within it initial toggle values are assigned, visual impairment scripts are looked up and slider toggle listeners are added.
     /// </summary>
     void Start()
     {
@@ -111,21 +138,10 @@ public class StoryMenu : MonoBehaviour
 
     }
 
-
-    public void yellowToggle()
-    {
-
-        if (yellow)
-        {
-            yellowScript.enabled = false;
-            yellow = false;
-        }
-        else
-        {
-            yellow = true;
-            yellowScript.enabled = true;
-        }
-    }
+    /// <summary>
+    /// Function called by yellow toggle slider.
+    /// </summary>
+    /// <param name="slider"></param>
     public void sliderYellowToggle(Slider slider)
     {
         switch ((int)slider.value)
@@ -142,6 +158,10 @@ public class StoryMenu : MonoBehaviour
 
         } 
     }
+    /// <summary>
+    /// Function called by depth toggle slider.
+    /// </summary>
+    /// <param name="slider"></param>
     public void sliderDepthToggle(Slider slider)
     {
         switch ((int)slider.value)
@@ -154,16 +174,17 @@ public class StoryMenu : MonoBehaviour
                 depth = true;
                 depthScript.enabled = true;
                 break;
-
-
         }
     }
+    /// <summary>
+    /// Function called by cataract toggle slider.
+    /// </summary>
+    /// <param name="slider"></param>
     public void sliderCataractToggle(Slider slider)
     {
         switch ((int)slider.value)
         {
             case 0:
-                //cataractScript.enabled = false;
                 cataractScript.ChangeEnableOfCataract(false);
 
                 cataract = false;
@@ -174,6 +195,10 @@ public class StoryMenu : MonoBehaviour
                 break;
         }
     }
+    /// <summary>
+    /// Function called by glaucoma toggle slider.
+    /// </summary>
+    /// <param name="slider"></param>
     public void sliderGlaucomaToggle(Slider slider)
     {
         switch ((int)slider.value)
@@ -188,48 +213,12 @@ public class StoryMenu : MonoBehaviour
                 break;
         }
     }
-    public void depthToggle()
-    {
-        if (depth)
-        {
-            depth = false;
-            depthScript.enabled = false;
-        }
-        else
-        {
-            depth = true;
-            depthScript.enabled = true;
-        }
-    }
-    public void glaucomaToggle()
-    {
-        if (glaucoma)
-        {
-            glaucoma = false;
-            glaucomaScript.enabled = false;
-        }
-        else
-        {
-            glaucoma = true;
-            glaucomaScript.enabled = true;
-        }
-    }
-    public void cataractToggle()
-    {
-        if (glaucoma)
-        {
-            cataract = false;
-            cataractScript.enabled = false;
-        }
-        else
-        {
-            cataract = true;
-            cataractScript.enabled = true;
-        }
-    }
 
 
-    // Update is called once per frame
+
+    /// <summary>
+    /// Function <c>Update</c> checking for pause button.
+    /// </summary>
     void Update()
     {
         // Pause game
@@ -245,38 +234,40 @@ public class StoryMenu : MonoBehaviour
                 pause = true;
                 openSettings();
             }
-            //StartCoroutine(Wait());
         }
-        //architectCanvas.transform.position = eyesCamera.transform.position + eyesCamera.transform.forward * 1;
-        //architectCanvas.transform.rotation = new Quaternion(0.0f, eyesCamera.transform.rotation.y, 0.0f, eyesCamera.transform.rotation.w);
-        //architectCanvas.transform.rotation = new Quaternion(0.0f, eyesCamera.transform.rotation.y, 0.0f, eyesCamera.transform.rotation.w);
     }
 
-    //IEnumerator Wait()
-    //{
-    //    print(Time.time);
-    //    yield return new WaitForSeconds(1);
-    //    print(Time.time);
-    //}
-
+    /// <summary>
+    /// Function toggling on the <c>OptionsPanel</c>.
+    /// </summary>
     public void openSettings()
     {
         optionsPanel.SetActive(true);
         confirmPanel.SetActive(false);
     }
 
+    /// <summary>
+    /// Function toggling on the <c>ConfirmQuitPanel</c>.
+    /// </summary>
     public void openConfirm()
     {
         optionsPanel.SetActive(false);
         confirmPanel.SetActive(true);
     }
 
+    /// <summary>
+    /// Function hiding the <c>OptionsPanel</c> and <c>ConfirmQuitPanel</c>.
+    /// </summary>
     public void resume()
     {
         optionsPanel.SetActive(false);
         confirmPanel.SetActive(false);
     }
 
+    /// <summary>
+    /// Function that loads the <c>sceneName</c> scene.
+    /// </summary>
+    /// <param name="sceneName"></param>
     public void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
