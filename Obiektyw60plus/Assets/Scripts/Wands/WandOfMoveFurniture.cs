@@ -19,10 +19,21 @@ using OculusSampleFramework;
 /// </summary>
 public class WandOfMoveFurniture : MonoBehaviour
 {
-
+    /// <summary>
+    /// Parameter <c>move</c> is true when object moves
+    /// </summary>
     public bool move = false;
+    /// <summary>
+    /// Parameter<c>PointToGo</c> is the final position of object to go used in the <c>MovableObject</c> script
+    /// </summary>
     public Vector3 PointToGo;
+    /// <summary>
+    /// Parameter<c>CurtainObjectName</c> is the name of curtain object
+    /// </summary>
     public string CurtainObjectName = "zaslony";
+    /// <summary>
+    /// Parameter<c>MovableLayerName</c> is the name of layer for movable objects
+    /// </summary>
     public string MovableLayerName = "Movable";
 
     DistanceGrabbable distanceGrabbable;
@@ -38,18 +49,20 @@ public class WandOfMoveFurniture : MonoBehaviour
     GameObject KitchenShelf;
     GameObject GameManager;
     GameObject Door;
-    GameObject wandOfMoveFurnitures;
+    GameObject WandOfMoveFurnitures;
 
     bool UsingItem = false;
     bool SomethingIsUsed = false;
 
     // Variables for holding user input
-    private float MovementInput;
+    float MovementInput;
 
-    // Use this for initialization
+/// <summary>
+/// Initialization of the objects used by wand
+/// </summary>
     void Start()
     {
-        wandOfMoveFurnitures = GameObject.Find("WandOfMoveFurniture");
+        WandOfMoveFurnitures = GameObject.Find("WandOfMoveFurniture");
 
         KitchenShelf = GameObject.Find("salonRegal");
         if (!KitchenShelf) Debug.Log("Can't find salonRegal");
@@ -71,7 +84,10 @@ public class WandOfMoveFurniture : MonoBehaviour
         if (!curtainController) Debug.Log("No CurtainController script attached to GameManager object");
     }
 
-    // Update is called once per frame
+/// <summary>
+/// Update is called once per frame
+/// Here user input is checked and appropriate scripts are activated
+/// </summary>
     void Update()
     {
         MovementInput = Input.GetAxis("Oculus_CrossPlatform_SecondaryIndexTrigger") + Input.GetAxis("Oculus_CrossPlatform_PrimaryIndexTrigger");
@@ -105,7 +121,7 @@ public class WandOfMoveFurniture : MonoBehaviour
                 drawLaser.IsShowingLaser = true;
                 UsingItem = true;
 
-                CastSpells castSpells = (CastSpells)wandOfMoveFurnitures.GetComponent(typeof(CastSpells));  //activating the spells
+                CastSpells castSpells = (CastSpells)WandOfMoveFurnitures.GetComponent(typeof(CastSpells));  //activating the spells
                 castSpells.StartUsingSpells();
 
             }
@@ -117,11 +133,15 @@ public class WandOfMoveFurniture : MonoBehaviour
             castingToObject.IsCasting = false;
             drawLaser.IsShowingLaser = false;
 
-            CastSpells castSpells = (CastSpells)wandOfMoveFurnitures.GetComponent(typeof(CastSpells));
+            CastSpells castSpells = (CastSpells)WandOfMoveFurnitures.GetComponent(typeof(CastSpells));
             castSpells.StopUsingSpells();
         }
     }
 
+    /// <summary>
+    /// Returns true if selected object is child of KitchenShelf object
+    /// </summary>
+    /// <returns></returns>
     private bool IsSelectedShelf()
     {
         GameObject selectedObject = GameObject.Find(CastingToObject.selectedObject);
@@ -133,6 +153,10 @@ public class WandOfMoveFurniture : MonoBehaviour
         else return false;
     }
 
+    /// <summary>
+    /// Returns true if selected object has MoveDoor component attached
+    /// </summary>
+    /// <returns></returns>
     private bool IsSelectedDoor()
     {
         GameObject selectedObject = GameObject.Find(CastingToObject.selectedObject);
@@ -156,6 +180,10 @@ public class WandOfMoveFurniture : MonoBehaviour
     //    else return false;
     //}
 
+    /// <summary>
+    /// returns true if selected object's name is <c>CurtainObjectName</c>
+    /// </summary>
+    /// <returns></returns>
     private bool IsSelectedCurtain()
     {
         GameObject selectedObject = GameObject.Find(CastingToObject.selectedObject);
@@ -168,6 +196,10 @@ public class WandOfMoveFurniture : MonoBehaviour
         else return false;
     }
 
+    /// <summary>
+    /// Finds intersection point using <c>Physics.Raycast</c> from wand forward
+    /// Omits the <c>MovableLayerName</c> layer
+    /// </summary>
     private void FindIntersectionPoint()
     {
         int layerMask = 1 << LayerMask.NameToLayer(MovableLayerName); 
@@ -182,14 +214,15 @@ public class WandOfMoveFurniture : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "PlayerTag")
-        {
-            Debug.Log("collision omitted");
-            Collider PlayerCollider = collision.gameObject.GetComponent<BoxCollider>();
-            Physics.IgnoreCollision(PlayerCollider, WandCollider);
-        }
-    }
+
+    //void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collision.gameObject.tag == "PlayerTag")
+    //    {
+    //        Debug.Log("collision omitted");
+    //        Collider PlayerCollider = collision.gameObject.GetComponent<BoxCollider>();
+    //        Physics.IgnoreCollision(PlayerCollider, WandCollider);
+    //    }
+    //}
 
 }

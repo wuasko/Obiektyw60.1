@@ -1,12 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+/// <summary>
+/// Highlight objects when collision occurs
+/// CheckHandCollision steers this script
+/// </summary>
 
-//Highlight objects when collision occurs
-//CheckHandCollision steers this script
 public class HighlightCollided : MonoBehaviour {
 
+    /// <summary>
+    /// Parameter<c>rayHit</c> activates/deactivates highlighting of an object
+    /// </summary>
     public bool rayHit;
+    /// <summary>
+    /// Parameter<c>selectedObject</c> is the currently selected object
+    /// </summary>
     public GameObject selectedObject;
 
     private int redCol;
@@ -21,12 +29,18 @@ public class HighlightCollided : MonoBehaviour {
     private Color32[] initialColors;
     private Color32 newColor;
 
+
+    /// <summary>
+    /// Initialization of colors
+    /// </summary>
     private void Start()
     {
         initialColors = new Color32[transform.childCount];
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// Updates objects colors every frame
+    /// </summary>
     void Update()
     {
 
@@ -64,6 +78,10 @@ public class HighlightCollided : MonoBehaviour {
 
 
     }
+
+    /// <summary>
+    /// Getting color of children objects
+    /// </summary>
     private void getChildColor()
     {
         int i = 0;
@@ -73,6 +91,10 @@ public class HighlightCollided : MonoBehaviour {
             i++;
         }
     }
+    /// <summary>
+    /// Changing color of children objects according to the <c>colorToSet</c> array
+    /// </summary>
+    /// <param name="colorToSet"> Color to set </param>
     private void changeChildColor(Color32[] colorToSet)
     {
         int i = 0;
@@ -82,6 +104,10 @@ public class HighlightCollided : MonoBehaviour {
             i++;
         }
     }
+    /// <summary>
+    ///  Returns an array with color of children objects to <c>colorToSet</c>
+    /// </summary>
+    /// <param name="colorToSet"> Color to set </param>
     private Color32[] setColors(Color32 colorToSet)
     {
         Color32[] newColors = new Color32[transform.childCount];
@@ -92,6 +118,9 @@ public class HighlightCollided : MonoBehaviour {
         return newColors;
     }
 
+    /// <summary>
+    /// Changes color when <c>lookingAtObject</c> is true
+    /// </summary>
     private void changeColor()
     {
         if (lookingAtObject)
@@ -106,6 +135,10 @@ public class HighlightCollided : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Coroutine for highlighting the object, by changing the RGB components of color
+    /// </summary>
+    /// <returns></returns>
     IEnumerator FlashObject()
     {
 

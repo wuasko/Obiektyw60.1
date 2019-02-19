@@ -11,14 +11,25 @@ using UnityEngine;
 public class DrawLaser : MonoBehaviour {
 
 
-    // Use this for initialization
+    /// <summary>
+    /// Parameter <c>DistanceToDrawLine</c> is used to store distance to draw the rendered line
+    /// </summary>
     public float DistanceToDrawLine = 10f;
+    /// <summary>
+    /// Parameter<c>IsShowingLaser</c> activates/deactivates drawing the laser pointer
+    /// It is set in WandOfMoveFurniture script
+    /// </summary>
+    public bool IsShowingLaser = false;
+
     LineRenderer lineRenderer;
     Vector3 pos1; //position when not using
     Vector3 pos2; //position when using
-    public bool IsShowingLaser = false; 
+
     bool Started = false; //used for activating the ShowLaser coroutine only once 
 
+    /// <summary>
+    /// Initialization of LineRenderer with some initial values and start<c>pos1</c> and end<c>pos2</c> positions for rendering line 
+    /// </summary>
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
@@ -29,7 +40,10 @@ public class DrawLaser : MonoBehaviour {
         pos2 = new Vector3(0, 0, DistanceToDrawLine);
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// Update is called once per frame
+    /// starts/stops coroutine to draw line depending on the <c>IsShowingLaser</c> parameter and <c>Started</c> parameter
+    /// </summary>
     void Update()
     {
         if (!Started)//only do this when coroutine is not active (object is not being used)
@@ -50,6 +64,10 @@ public class DrawLaser : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Coroutine for rendering the laser
+    /// </summary>
+    /// <returns></returns>
     IEnumerator ShowLaser()
     {
         while (IsShowingLaser)

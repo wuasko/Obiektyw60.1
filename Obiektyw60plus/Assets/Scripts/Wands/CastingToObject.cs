@@ -7,29 +7,37 @@ using UnityEngine;
 /// </summary>
 public class CastingToObject : MonoBehaviour {
 
+    /// <summary>
+    /// Parameter <c>IsCasting</c> is used for activating/deactivating detecting objects using wand
+    /// </summary>
     public bool IsCasting = false;
+    /// <summary>
+    /// Parameter <c>selectedObject</c> is the name of detected object
+    /// </summary>
     public static string selectedObject;
+    /// <summary>
+    /// Parameter<c>internalObject</c> is the detected object
+    /// </summary>
     public string internalObject;
-    public RaycastHit theObject;
 
+    RaycastHit theObject;
     HighlightSelected lastHighlighted = null; //last highlited object
     HighlightSelected Highlighted = null; //currently highlighted object
     Transform tempObject;
 
 
-    // Use this for initialization
+    /// <summary>
+    /// Assigning tempObject transform
+    /// </summary>
     void Start () {
         tempObject = transform; //temporary assignment
     }
-	
-	// Update is called once per frame
-	void Update () {
 
-        //activate the raycasting with r button, for development purposes only
-        if (Input.GetKeyDown("r"))
-        {
-            IsCasting = !IsCasting;
-        }
+    /// <summary>
+    /// Update is called once per frame
+    /// the selectedObject and highlighting is set here
+    /// </summary>
+    void Update () {
 
         if (IsCasting)
         {

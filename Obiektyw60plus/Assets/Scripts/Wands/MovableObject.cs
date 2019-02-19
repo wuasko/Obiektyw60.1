@@ -8,6 +8,9 @@ using UnityEngine;
 /// </summary>
 public class MovableObject : MonoBehaviour {
 
+    /// <summary>
+    /// Parameter <c>selectedObject</c> is the currently selected object
+    /// </summary>
     public GameObject selectedObject;
 
     HighlightSelected highlightSelected;
@@ -15,14 +18,14 @@ public class MovableObject : MonoBehaviour {
     bool coroutineStarted = false;
     bool startedMoving = false;
     Rigidbody rigidbody;
-    public int cnt = 0;
-
     GameObject wand;
     WandOfMoveFurniture wandOfMove;
 
 
-	// Use this for initialization
-	void Start () {
+    /// <summary>
+    /// Initialization of wand, wandOfMove, highlightSelected and rigidbody variables
+    /// </summary>
+    void Start () {
         
         wand = GameObject.Find("WandOfMoveFurniture");
         if (!wand) Debug.Log("Can't find wand of move furniture");
@@ -36,10 +39,11 @@ public class MovableObject : MonoBehaviour {
         wandOfMove.PointToGo = transform.position;
 
 	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
 
+    /// <summary>
+    ///  Function <c>FixedUpdate</c> is called once per frame to calculate the physics. Coroutine for moving objects is started and stopped here
+    /// </summary>
+    void FixedUpdate () {
 
         if (wandOfMove.move) //must hold right index finger to start moving coroutine
         {
@@ -65,7 +69,10 @@ public class MovableObject : MonoBehaviour {
         }
     }
 
-
+    /// <summary>
+    /// Coroutine for moving the current object
+    /// </summary>
+    /// <returns></returns>
     IEnumerator MoveObject()
     {
 

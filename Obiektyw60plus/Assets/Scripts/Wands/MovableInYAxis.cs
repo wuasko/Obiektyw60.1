@@ -9,6 +9,9 @@ using UnityEngine;
 /// </summary>
 public class MovableInYAxis : MonoBehaviour {
 
+    /// <summary>
+    /// Parameter<c>selectedObject</c> is the object currently selected
+    /// </summary>
     public GameObject selectedObject;
 
     HighlightSelected highlightSelected;
@@ -22,7 +25,9 @@ public class MovableInYAxis : MonoBehaviour {
     WandOfMoveFurniture wandOfMove;
 
 
-    // Use this for initialization
+/// <summary>
+/// Initialization of wand, wandOfMove, highlightSelected and rigidbody variables
+/// </summary>
     void Start()
     {
 
@@ -39,7 +44,9 @@ public class MovableInYAxis : MonoBehaviour {
 
     }
 
-    // Update is called once per frame
+    /// <summary>
+    ///  Function <c>FixedUpdate</c> is called once per frame to calculate the physics. Coroutine for moving objects is started and stopped here
+    /// </summary>
     void FixedUpdate()
     {
 
@@ -67,7 +74,10 @@ public class MovableInYAxis : MonoBehaviour {
         }
     }
 
-
+    /// <summary>
+    /// Coroutine for moving the current object
+    /// </summary>
+    /// <returns></returns>
     IEnumerator MoveObject()
     {
 

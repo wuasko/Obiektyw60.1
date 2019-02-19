@@ -16,7 +16,10 @@ public class CheckHandCollision : MonoBehaviour {
 
     bool IsSet = false;
 
-    // Use this for initialization
+    /// <summary>
+    /// Initialization, assigning HandRight, HandLeft,  
+    /// highlightCollided, distanceGrabbble variables
+    /// </summary>
     void Start () {
         HandRight = GameObject.Find("DistanceHandRight");
         if (!HandRight) Debug.Log("Can't find DistanceHandRight");
@@ -26,12 +29,13 @@ public class CheckHandCollision : MonoBehaviour {
         if (!highlightCollided) Debug.Log("Script HighlightCollided not attached");
         distanceGrabbable = GetComponent<DistanceGrabbable>();
         if (!distanceGrabbable) Debug.Log("Script DistanceGrabbable not attached");
-
-        //TODO find all colliders from HandRight, save them in list. Check for these colliders in OnCollisionEnter
     }
-	
-	// Update is called once per frame
-	void Update () {
+    /// <summary>
+    ///  Update is called once per frame
+    ///  highlightCollided.rayHit is set here when object is grabbed, IsSet is used to set the value to true only once
+    /// </summary>
+
+    void Update () {
         if (distanceGrabbable.isGrabbed && !IsSet)
         {
             highlightCollided.rayHit = true;
@@ -43,11 +47,14 @@ public class CheckHandCollision : MonoBehaviour {
             IsSet = false;
         }
 	}
+    /// <summary>
+    ///Setting Highlighting to true when objects enter any of the triggers
+    /// </summary>
+    /// <param name="col"> Collider entering trigger </param>
     void OnTriggerEnter(Collider col)
     {
         if (!IsSet)
         {
-            Debug.Log("Detecting collision with hand");
             if (col.gameObject.name == "Cone")
             {
                 highlightCollided.rayHit = true;
@@ -63,7 +70,10 @@ public class CheckHandCollision : MonoBehaviour {
             }
         }
     }
-
+    /// <summary>
+    /// Setting Highlighting to false when objects exit any of the triggers
+    /// </summary>
+    /// <param name="col"> Collider exiting trigger </param>
     void OnTriggerExit(Collider col)
     {
         if (!IsSet)
