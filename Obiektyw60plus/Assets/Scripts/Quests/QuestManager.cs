@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
-/// Class <c>QuestManager</c> manages the quests.
+/// Class <c>QuestManager</c> manages the quest system.
 /// </summary>
 public class QuestManager : MonoBehaviour
 {

@@ -10,34 +10,83 @@ using UnityEngine.Audio;
 
 public class MainMenu : MonoBehaviour
 {
-    //public GameObject playerController;
+    /// <summary>
+    /// Camera to which visual impairment scripts are attached.
+    /// </summary>
     public GameObject eyeEffectCamera;
+    /// <summary>
+    /// Player game object.
+    /// </summary>
     public GameObject player;
 
+    /// <summary>
+    /// Game object responsible for text and image localization.
+    /// </summary>
     public GameObject languageManager;
 
+    /// <summary>
+    /// Canvas on which the user interface is placed.
+    /// </summary>  
     public GameObject mainCanvas;
+    /// <summary>
+    /// <c>mainPanel</c> is the initial panel of the menu.
+    /// </summary>  
     public GameObject mainPanel;
+    /// <summary>
+    /// <c>gameModePanel</c> is menu panel displaying game mode selection.
+    /// </summary>  
     public GameObject gameModePanel;
+    /// <summary>
+    /// <c>gameModePanel</c> is menu panel displaying configuration of story mode.
+    /// </summary>  
     public GameObject storyModePanel;
+    /// <summary>
+    /// <c>gameModePanel</c> is menu panel displaying configuration of designer mode.
+    /// </summary>  
     public GameObject designerModePanel;
+    /// <summary>
+    /// <c>gameModePanel</c> is menu panel displaying settings.
+    /// </summary>  
     public GameObject settingsPanel;
+    /// <summary>
+    /// <c>gameModePanel</c> is menu panel displaying information about the project.
+    /// </summary>  
     public GameObject aboutPanel;
+    /// <summary>
+    /// <c>confirmPanel</c> hold panel that appears when player quits game and is asked for confirmation.
+    /// </summary>
     public GameObject confirmQuitPanel;
 
-    //public GameObject pauseCanvas;
+    /// <summary>
+    /// Slider controlling <c>MusicMixer</c>
+    /// </summary>
     public Slider volumeSlider;
-    //public Toggle yellowToggle_SM,yellowToggle_DM;
 
-    //public Dropdown visualSelection;
-
+    /// <summary>
+    /// Script responsible for glaucoma effect.
+    /// </summary>
     private GlaucomaEffecet glaucomaScript;
-    private DepthOfField depthScript; 
+    /// <summary>
+    /// Script responsible for depth of field effect.
+    /// </summary>
+    private DepthOfField depthScript;
+    /// <summary>
+    /// Script responsible for yellowing of the lense effect.
+    /// </summary>
     private YellowEyeEffect yellowScript;
+    /// <summary>
+    /// Script responsible for cataract effect.
+    /// </summary>
+    private CataractManager cataractScript;
 
+    /// <summary>
+    /// Audio Mixer controlling volume levels on the scene.
+    /// </summary>
     public AudioMixer audioMixer;
 
-    // Use this for initialization
+    /// <summary>
+    /// Class <c>MainMenu</c> initialization. Within it volume slider listener is assigned as well as initial values of <c>PlayerPrefs</c> attributes are set.
+    /// </summary>
     void Start()
     {
         glaucomaScript = eyeEffectCamera.GetComponent<GlaucomaEffecet>();
@@ -65,37 +114,22 @@ public class MainMenu : MonoBehaviour
             volumeSlider.value = PlayerPrefs.GetInt("volume");
         }
 
-        // Add yellowing toggle listener
-        //yellowToggle_DM.onValueChanged.AddListener(delegate { ToggleYellowing(); });
-        //yellowToggle_SM.onValueChanged.AddListener(delegate { ToggleYellowing(); });
-
-
-        //yellowScript.enabled = false;
-        //if (!PlayerPrefs.HasKey("yellowing"))
-        //{
-        //    yellowToggle_DM.isOn = false;
-        //    yellowToggle_SM.isOn = false;
-        //    PlayerPrefs.SetInt("yellowing", 0);
-        //}
-        //else
-        //{
-        //    volumeSlider.value = PlayerPrefs.GetInt("yellowing");
-        //}
-
-
-
-
-
-
         // Reset menu to proper layer configuration
         BackToMainPanel();
     }
 
+    /// <summary>
+    /// Function saving volume to <c>PlayerPrefs</c>.
+    /// </summary>
     private void VolumeChanged()
     {
         PlayerPrefs.SetInt("volume", Mathf.RoundToInt(volumeSlider.value));
     }
 
+    /// <summary>
+    /// Function saving language to <c>PlayerPrefs</c>
+    /// </summary>
+    /// <param name="languageFile"></param>
     public void LanguageChanged(String languageFile)
     {
         if (languageFile == "localizedText_pl.json")
@@ -113,7 +147,9 @@ public class MainMenu : MonoBehaviour
 
     }
 
-    // Keep the menu in front of player
+    /// <summary>
+    /// Function <c>Update</c> keeping the menu in front of player.
+    /// </summary>
     void Update()
     {
         //Should we update the position of the canvas?
@@ -122,6 +158,9 @@ public class MainMenu : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Function activating all panels for language update.
+    /// </summary>
     private void ActivateAllPanels()
     {
         mainPanel.SetActive(true);
@@ -134,6 +173,9 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Activating all panels.");
     }
 
+    /// <summary>
+    /// Function hiding all panels.
+    /// </summary>
     private void DeactivateAllPanels()
     {
         mainPanel.SetActive(false);
@@ -146,7 +188,9 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Deactivating panels.");
     }
 
-
+    /// <summary>
+    /// Function handling transition to game mode options menu.
+    /// </summary>
     public void OpenStartOptionsMenu()
     {
         mainPanel.SetActive(false);
@@ -158,6 +202,9 @@ public class MainMenu : MonoBehaviour
         confirmQuitPanel.SetActive(false);
     }
 
+    /// <summary>
+    /// Function handling transition to story menu.
+    /// </summary>
     public void OpenStartStoryMenu()
     {
         gameModePanel.SetActive(false);
@@ -166,6 +213,9 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.SetInt("GameMode", 0);
     }
 
+    /// <summary>
+    /// Function handling transition to the designer menu.
+    /// </summary>
     public void OpenStartDesignerMenu()
     {
         gameModePanel.SetActive(false);
@@ -175,14 +225,19 @@ public class MainMenu : MonoBehaviour
     }
 
 
-    // Scene loader
+    /// <summary>
+    /// Function that loads the <c>sceneName</c> scene.
+    /// </summary>
+    /// <param name="sceneName"></param>
     public void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
         Debug.Log(PlayerPrefs.GetInt("GameMode"));
     }
 
-    // Back to main panel
+    /// <summary>
+    /// Function handling transition to main panel.
+    /// </summary>
     public void BackToMainPanel()
     {
         mainPanel.SetActive(true);
@@ -194,24 +249,28 @@ public class MainMenu : MonoBehaviour
         confirmQuitPanel.SetActive(false);
     }
 
+    /// <summary>
+    /// Function used by yellowing toggle button.
+    /// </summary>
+    /// <param name="toggle"></param>
     public void ToggleYellowing(Toggle toggle)
     {
         if (toggle.isOn)
         {
             PlayerPrefs.SetInt("yellowing", 1);
-            //yellowToggle_SM.isOn = true;
-            //yellowToggle_DM.isOn = true;
             yellowScript.enabled = true;
         }
         else
         {
             yellowScript.enabled = false;
-            //yellowToggle_SM.isOn = false;
-            //yellowToggle_DM.isOn = false;
             PlayerPrefs.SetInt("yellowing", 0);
         }
     }
 
+    /// <summary>
+    /// Function used by glaucoma toggle button.
+    /// </summary>
+    /// <param name="toggle"></param>
     public void ToggleGlaucoma(Toggle toggle)
     {
         if (toggle.isOn)
@@ -223,6 +282,11 @@ public class MainMenu : MonoBehaviour
             glaucomaScript.enabled = false;
         }
     }
+
+    /// <summary>
+    /// Function used by yellowing toggle button.
+    /// </summary>
+    /// <param name="toggle"></param>
     public void ToggleDepth(Toggle toggle)
     {
         if (toggle.isOn)
@@ -235,13 +299,19 @@ public class MainMenu : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Function setting mixer volume to <c>sliderValue</c>.
+    /// </summary>
+    /// <param name="sliderValue"></param>
     public void SetLevel(float sliderValue)
     {
         PlayerPrefs.SetFloat("MusicVolume", sliderValue);
         audioMixer.SetFloat("MusicVolume", Mathf.Log10(sliderValue) * 20);
     }
 
-    // 
+    /// <summary>
+    /// Function handling transition to <c>AboutPanel</c>.
+    /// </summary>
     public void OpenPanelAbout()
     {
         mainPanel.SetActive(false);
@@ -249,7 +319,9 @@ public class MainMenu : MonoBehaviour
         aboutPanel.SetActive(true);
     }
 
-    // 
+    /// <summary>
+    /// Function handling transition to <c>SettingsPanel</c>.
+    /// </summary>
     public void OpenPanelSettings()
     {
         mainPanel.SetActive(false);
@@ -257,13 +329,18 @@ public class MainMenu : MonoBehaviour
         aboutPanel.SetActive(false);
     }
 
-    // Exit button functionality
+    /// <summary>
+    /// Function handling exit button.
+    /// </summary>
     public void ExitGame()
     {
         Debug.Log("Quit called!");
         Application.Quit();
     }
 
+    /// <summary>
+    /// Function handling transition to <c>ConfirmQuitPanel</c>.
+    /// </summary>
     public void OpenPanelConfirmQuit()
     {
         mainPanel.SetActive(false);

@@ -3,13 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
+/// <summary>
+/// Class <c>LocalizationManager</c> handles language file loading and updating all across localization dependent elements.
+/// </summary>
 public class LocalizationManager : MonoBehaviour {
-
+    
+    /// <summary>
+    /// Instance of the class used in enforcing singleton pattern.
+    /// </summary>
     public static LocalizationManager instance;
+    /// <summary>
+    /// String storing result value of localized text.
+    /// </summary>
     string result = "missing";
-
+    /// <summary>
+    /// Dictionary used to store language file keys and values.
+    /// </summary>
     private Dictionary<string, string> localizedText;
-    // Enforce singleton pattern
+    /// <summary>
+    /// Initialization and enforcing the singleton pattern
+    /// </summary>
     void Awake() {
         if (instance == null)
         {
@@ -32,7 +45,10 @@ public class LocalizationManager : MonoBehaviour {
         }
         //LoadLocalizedText("localizedText_en.json");
     }
-
+    /// <summary>
+    /// Function loading and reading json language file and storing it in <c>localizedText</c> dictionary.
+    /// </summary>
+    /// <param name="fileName"></param>
     public void LoadLocalizedText(string fileName)
     {
         localizedText = new Dictionary<string, string>();
@@ -54,7 +70,11 @@ public class LocalizationManager : MonoBehaviour {
         }
         ReloadScene();
     }
-
+    /// <summary>
+    /// Function looking up text value in dictionary by the <c>key</c>
+    /// </summary>
+    /// <param name="key"></param>
+    /// <returns>Corresponding text value.</returns>
     public string GetLocalizedValue(string key)
     {
         if (localizedText.ContainsKey(key))
@@ -63,7 +83,9 @@ public class LocalizationManager : MonoBehaviour {
         }
         return result;
     }
-
+    /// <summary>
+    /// Function responsible for updating all localized components on current scene.
+    /// </summary>
     private void ReloadScene()
     {
         Debug.Log("Reloading scene");
